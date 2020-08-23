@@ -1,0 +1,111 @@
+/* Default rtl woocommerce styles */
+
+    .woocommerce ul.cart_list li img,
+    .woocommerce ul.product_list_widget li img {
+        float: right;
+        margin-left: 1em;
+    }
+
+    .woocommerce .price_label,
+    .woocommerce .price_label span {
+        direction: ltr;
+        unicode-bidi: embed
+    }
+
+    .woocommerce .col2-set .col-1,
+    .woocommerce-page .col2-set .col-1 {
+        float: right
+    }
+
+    .woocommerce .col2-set .col-2,
+    .woocommerce-page .col2-set .col-2 {
+        float: left
+    }
+
+    .woocommerce ul.cart_list li img, .woocommerce ul.product_list_widget li img {
+        float: right;
+        margin-left: 1em;
+        margin-right: 0;
+    }
+    
+    .woocommerce div.product form.cart {
+        margin-bottom: 1em;
+        position: absolute;
+    }
+
+    &.woocommerce div.product form.cart .button {
+        vertical-align: middle;
+        float: right;
+    }
+
+    &.woocommerce div.product form.cart div.quantity {
+        float: right;
+    }
+
+    .summary {
+        .cart .single_add_to_cart_button {
+            right: 10px;
+        }
+    }
+
+    &.woocommerce .related.products li.product, .woocommerce-page .related.products li.product {
+        float: right;
+        padding: 1em;
+        margin: 0;  
+    } 
+
+    /* Cart */
+
+@media (max-width: 767px) {
+
+        .product-thumbnail {    
+            img {
+                float: right;
+            }
+        }
+    }
+
+    table.shop_table_responsive tr td::before {
+        content: attr(data-title) ": ";
+        float: right;
+        direction: rtl;
+    }
+
+    table.shop_table_responsive tr td {
+        text-align: left;
+    }
+
+    /* Single product tabs */
+    @media (max-width:960px){
+        .q_tabs .tabs-nav li {
+            margin-right: 0;
+        }
+    }
+
+    /* Menu icons */
+    .cart-counter {
+        right: auto;
+        left: 0;
+        @media(max-width: 981px){
+            left: auto;
+            right: 2em;
+        }
+    }
+
+    .wishlist-counter {
+        right: auto;
+        left: -10px;
+        @media(max-width: 981px){
+            left: auto;
+            right: 2em;
+        }
+    }
+
+    .widget .woocommerce-product-search input[type="search"] {
+        float: right;
+    }
+
+/* Wishlist styles */
+.yith-wcwl-add-button span {
+    padding-right: .5em;
+}

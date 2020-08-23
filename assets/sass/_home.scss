@@ -1,0 +1,231 @@
+/* Post title in post loop */
+h2.entry-title a {
+    color: $headings_color;
+    font-size: 26px;
+}
+
+.entry-meta .posted-on, .entry-footer span {
+	padding-right: 8px
+}
+
+.entry-meta span, .entry-footer span {
+    color: $color__dark_gray;
+    font-weight: 300;
+}
+
+.entry-meta span a, .entry-footer span a, .entry-meta span .entry-date {
+    color: $color__dark_gray;
+    font-size: 12px;
+    line-height: 30px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.entry-meta span a:hover, .entry-footer span a:hover {
+    color: $color__pink;
+    text-decoration: underline;
+}
+
+/* <fs_premium_only> */
+
+/* DEMO CONTENT PREMIUM FEATURE */
+
+/* Recent Products Section */
+
+.recent-entry-header {
+
+    h2, p {
+        text-align: center;
+    }
+
+    p {
+        font-size: 20px;
+        line-height: 1.65;
+        color: #868E96;
+    }
+
+}
+
+.recent-posts-wrapper {
+    height: 500px;
+
+    .swiper-button-next, .swiper-button-prev {
+        top: 25%;
+    }
+}
+
+
+/* Recent Posts widget */
+.recent-post-meta a {
+    display: block;
+    word-break: break-word;
+}
+
+/* Banner */
+
+.banner-holder {
+    @include full-width;
+    background-position: 50% 20%;
+    
+    .banner-text {
+        width: 80%;
+        margin: auto;
+        padding: 6em 0;
+        max-width: 85em;
+        text-align: center;
+        h2, p {
+            color: #fff;
+        }
+        h2 {
+            font-weight: 900;
+            font-size: 36px;
+        }
+        p {
+            line-height: 30px;
+            font-size: 20px;
+        }
+    }
+
+    .button-wrap {
+        padding-top: 2em;
+        button {
+            font-size: 14px;
+            line-height: 53px;
+            height: 53px;
+            font-weight: 400;
+            padding: 0 44px;
+            margin: 10px 10px 0 10px;
+
+            &:hover {
+                border: 1px solid #fff;
+            }
+        }
+    }
+
+}
+
+.banner-overlay {
+    background-color: rgba(0,0,0,.8);
+}
+
+/* Newsletter */
+
+.mc4wp-form-basic, .mc4wp-form-basic input, .mc4wp-form-basic label, .mc4wp-form-theme, .mc4wp-form-theme input, .mc4wp-form-theme label {
+    @include full-width;
+    display: inline-block;
+    text-align: center;
+    padding: 4em 2em;
+}
+
+.mc4wp-form-theme {
+    background: #f5f5f5;
+}
+
+.mc4wp-form-fields{
+    @media (min-width: 80em) {
+        p {
+            width: 60%;
+            margin: 2em auto;
+        }
+    }
+}
+
+/* Testimonials */
+
+.testimonials-container {
+    @include full-width;
+    background: #f5f5f5;
+    padding: 2em 0;
+}
+
+.testimonials-wrapper {
+    max-width: 1120px;
+}
+
+.testimonial-item {
+    text-align: center;
+}
+@media (min-width:40em){
+    .testimonial-meta {
+        width: 60%;
+        margin: 0 auto;
+    }
+}
+
+.testimonial-image img {
+    width: 90px;
+    border-radius: 50%;
+}
+
+/* Categories */
+
+@media (min-width: 40em){
+    .featured-cat-wrapper {
+        display: flex;
+        justify-content: space-between;
+        margin: 3em 0;
+    }
+    
+    .featured-cat {
+        width: 32.5%;
+    }
+}
+
+.block-content {
+	position: relative;
+	z-index: 1;
+}
+.text-content {
+	position: absolute;
+	z-index: 2;
+	top: 41%;
+	left: 37%;
+    background: #fff;
+    a{
+        display: inline-block;
+        padding: 8px 25px;
+    }
+    h3 {
+        margin: 0
+    }
+}
+
+.text-content:hover {
+	background: $color__pink;
+}
+
+.dark-mode .text-content {
+    background: #161616;
+}
+.dark-mode .text-content h3 a {
+    color: $color__pink;
+}
+
+.dark-mode .text-content:hover {
+    color: #161616;
+}
+
+
+.dark-mode .banner-holder button {
+	background: transparent;
+	border: 1px solid #fff;
+}
+
+.dark-mode .mc4wp-form-theme {
+    background-color: rgb(0,0,0,.8);
+}
+
+.dark-mode .testimonials-container {
+    background-color: #262626;
+}
+
+.dark-mode .testimonials-container h2 a, .dark-mode .testimonials-container p a {
+    color: #fff;
+}
+
+.dark-mode .testimonials-container span p {
+    color: #868e96;
+}
+
+/* END OF DEMO CONTENT */
+/* </fs_premium_only> */

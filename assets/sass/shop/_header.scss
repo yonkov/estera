@@ -1,0 +1,18 @@
+// Shopping bag and Wishlist icons
+
+.cart-contents-count, .icon_heart_alt {
+    font-size: 18px;
+}
+
+.cart-counter {
+    @extend %menu-icons;
+}
+
+.wishlist-counter {
+    @extend %menu-icons;
+    right: auto;
+    @media(min-width: 982px){
+        left: 14px;
+        top:1.5em;
+    }
+}

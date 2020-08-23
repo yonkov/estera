@@ -1,0 +1,61 @@
+
+/* Latest Posts */
+
+.wp-block-latest-posts li a {
+    padding: 1em 2em 0 0;
+    display: inline-block;
+}
+
+/* Tags */
+
+
+/* Tags Widget */
+.wp-block-tag-cloud a {
+    margin: 0 3px 5px 0;
+}
+
+.wp-block-tag-cloud a {
+    color: #a7a6a6;
+    border: 1px solid #a7a6a6;
+    padding: 0 15px;
+    line-height: 32px;
+    height: 32px;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 10px !important;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background-color .2s ease-in-out, border-color .2s ease-in-out, color .2s ease-in-out;
+}
+
+.wp-block-tag-cloud a:hover {
+    color: #fff;
+    border-color: #9d9d9d;
+    background-color: #9d9d9d;
+}
+
+/* Categories widget */
+
+.wp-block-categories.wp-block-categories-list {
+    &.center-gb-categories {
+        display: table;
+    }
+    a{
+        font-size: 12px;
+        line-height: 30px;
+        font-weight: 500;
+        color: $color__dark_gray;
+        text-transform: uppercase;
+    }
+}
+
+/* Dark mode */
+
+.dark-mode .wp-block-latest-posts li a {
+    color: #fff;
+}
+
+.dark-mode a:visited {
+    color: #fff;
+}

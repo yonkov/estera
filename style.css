@@ -1,0 +1,25 @@
+/*
+Theme Name: Estera
+Theme URI: http://nasiothemes.com/
+Author: Nasio Themes
+Author URI: https://yonkov.github.io
+Description: Estera is a lightweight WordPress theme optimized for creating blazing fast WooCommerce online stores. The theme provides an exhaustive documentation and plenty of options in the theme customizer, which makes it accessible and easy to use even to people with little or no coding experience at all.
+Version: 0.1
+Requires at least: 5.2
+Requires PHP: 5.6
+Tested up to: 5.4
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: estera
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+*/
+
+/**
+ * This file is here to make WordPress happy. Do not modify.
+ *
+ * The actual stylesheets can be found in assets/css but this
+ * theme uses sass so they are preprocessed from assets/scss.
+ *
+ * If you want to add custom css to this theme, go to 
+ * Theme Customizer => Additional CSS tab
+ */
