@@ -569,7 +569,7 @@
 
  .entry-meta span a:hover,.entry-footer span a:hover { color:#ff499a; text-decoration:underline; }
 
- /* DEMO CONTENT PREMIUM FEATURE */ /* Recent Products Section */ /* <fs_premium_only> */ /* </fs_premium_only> */ /* Add icons to entry meta */ .cat-links:before,.tags-links:before,.author.vcard:before,.posted-on:before,.comments-link:before { font-family:ElegantIcons; position:relative; top:1px; padding-right:6px; }
+ /* Add icons to entry meta */ .cat-links:before,.tags-links:before,.author.vcard:before,.posted-on:before,.comments-link:before { font-family:ElegantIcons; position:relative; top:1px; padding-right:6px; }
 
  .cat-links:before { content:'\6d'; }
 

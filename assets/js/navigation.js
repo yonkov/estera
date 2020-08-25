@@ -140,25 +140,7 @@ jQuery(function ($) {
 
 	window.onscroll = function () {
 		scrollFunction();
-	};
-
-	function scrollFunction() {
-		if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-			if (document.getElementById("scroll-btn")) {
-				document.getElementById("scroll-btn").style.display = "block";
-			}
-			if (document.getElementById("scroll-cart")) {
-				document.getElementById("scroll-cart").style.display = "block";
-			}
-		} else {
-			if (document.getElementById("scroll-btn")) {
-				document.getElementById("scroll-btn").style.display = "none";
-			}
-			if (document.getElementById("scroll-cart")) {
-				document.getElementById("scroll-cart").style.display = "none";
-			}
-		}
-	}
-
+		
+/* Premium Code Stripped by Freemius */
 
 })

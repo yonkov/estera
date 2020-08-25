@@ -390,6 +390,7 @@ function estera_customize_swiper_slider (){
         var mySwiper = new Swiper('.header-slider-wrapper', {
             speed: 400,
             loop: true,
+            preloadImages: false,
             lazy: true,
             <?php if ($auto_play) : ?>
             autoplay: {
