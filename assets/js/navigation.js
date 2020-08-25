@@ -135,12 +135,6 @@ jQuery(function ($) {
 })
 
 // When the user scrolls down 20px from the top of the document, show the woocommerce fixed menu icons
-
-jQuery(function ($) {
-
 	window.onscroll = function () {
 		scrollFunction();
-		
-/* Premium Code Stripped by Freemius */
-
-})
+	}

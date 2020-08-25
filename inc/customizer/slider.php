@@ -383,7 +383,7 @@ function estera_customize_swiper_slider (){
     <?php //Slider configuration
 
     $auto_play = get_theme_mod('autoplay-slider', 0);
-	$auto_drag = get_theme_mod('autodrag-slider', 0)? 'true': 'false';
+	$auto_drag = get_theme_mod('autodrag-slider', 1)? 'true': 'false';
 	$slider_pagination = get_theme_mod('display-slider-pagination', 1); ?>
 
     <script>

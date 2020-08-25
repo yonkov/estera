@@ -123,54 +123,20 @@ add_action( 'widgets_init', 'estera_widgets_init' );
 /**
  * Enqueue scripts and styles.
  */
-function estera_styles_and_scripts()
-{
+function estera_styles_and_scripts() {
     //Slider css
-    wp_enqueue_style(
-        'swiper-slider',
-        get_template_directory_uri() . '/assets/css/swiper.min.css',
-        array(),
-        ESTERA_VERSION
-    );
+    wp_enqueue_style('swiper-slider', get_template_directory_uri() . '/assets/css/swiper.min.css', array(), ESTERA_VERSION );
     /* Theme css file */
-    wp_enqueue_style(
-        'estera-global',
-        get_template_directory_uri() . '/assets/css/style.css',
-        array(),
-        ESTERA_VERSION
-    );
+    wp_enqueue_style('estera-global', get_template_directory_uri() . '/assets/css/main.css', array(), ESTERA_VERSION );
     /* RTL css */
     wp_style_add_data( 'estera-global', 'rtl', 'replace' );
     //Slider js
-    wp_enqueue_script(
-        'swiper-slider',
-        get_template_directory_uri() . '/assets/js/swiper.min.js',
-        null,
-        null,
-        false
-    );
+    wp_enqueue_script('swiper-slider', get_template_directory_uri() . '/assets/js/swiper.min.js', null, null, false );
     //Theme js
+    wp_enqueue_script('estera-navigation', get_template_directory_uri() . '/assets/js/navigation.js', array( 'jquery' ), ESTERA_VERSION, true );
+    wp_enqueue_script( 'estera-dark-mode', get_template_directory_uri() . '/assets/js/toggleDarkMode.js', array( 'jquery' ), ESTERA_VERSION, true );
     wp_enqueue_script(
-        'estera-navigation',
-        get_template_directory_uri() . '/assets/js/navigation.js',
-        array( 'jquery' ),
-        ESTERA_VERSION,
-        true
-    );
-    wp_enqueue_script(
-        'estera-dark-mode',
-        get_template_directory_uri() . '/assets/js/toggleDarkMode.js',
-        array( 'jquery' ),
-        ESTERA_VERSION,
-        true
-    );
-    wp_enqueue_script(
-        'estera-skip-link-focus-fix',
-        get_template_directory_uri() . '/assets/js/skip-link-focus-fix.js',
-        array(),
-        ESTERA_VERSION,
-        true
-    );
+        'estera-skip-link-focus-fix', get_template_directory_uri() . '/assets/js/skip-link-focus-fix.js', array(), ESTERA_VERSION, true );
     if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
         wp_enqueue_script( 'comment-reply' );
     }
