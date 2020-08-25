@@ -196,8 +196,8 @@ function estera_the_posts_navigation (){
 	
 	the_posts_navigation(
 		array(
-			'prev_text' => __( $estera_prev_arrow .' Older posts', 'estera'),
-			'next_text' => __('Newer posts ' . $estera_next_arrow, 'estera'),
+			'prev_text' => $estera_prev_arrow . __(' Older posts', 'estera'),
+			'next_text' => __('Newer posts', 'estera') . $estera_next_arrow,
 			'screen_reader_text' => __('Posts navigation', 'estera')
 		)
 	);

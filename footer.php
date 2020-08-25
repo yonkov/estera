@@ -22,12 +22,13 @@
 		<div class="site-info">
 
 		<?php if( get_theme_mod( 'footer_text_block')) : ?> 
-		<?php echo esc_html(get_theme_mod( 'footer_text_block')); //make sure output is escaped properly ?>
+		<?php echo esc_html(get_theme_mod( 'footer_text_block')); ?>
 		
 		<?php else :
-			/* translators: 1: Theme name, 2: Theme author. */
-			printf( esc_html__( 'Designed by %1$s', 'estera' ), '<a href="https://yonkov.github.io">Nasio Themes</a>' ); ?>
-				
+			esc_html_e('Designed by', 'estera'); ?>
+			<a href="<?php echo esc_url( 'https://nasiothemes.com/' ); ?>" class="imprint">
+            	<?php printf( __( '%s', 'estera' ), 'Nasio Themes' );?>
+        	</a>
 			<span class="sep"> || </span>
 				<?php
 				/* translators: %s: CMS name, i.e. WordPress. */

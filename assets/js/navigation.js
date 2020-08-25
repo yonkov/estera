@@ -140,7 +140,6 @@ jQuery(function ($) {
 
 	window.onscroll = function () {
 		scrollFunction();
-		animation()
 	};
 
 	function scrollFunction() {
@@ -161,56 +160,5 @@ jQuery(function ($) {
 		}
 	}
 
-	function animation() {
-		scroll_pos = $(window).scrollTop() + $(window).height();
 
-		/* Add animation class to Recent Projects */
-		var projects = $('.recent-products-wrapper');
-		if (projects.length > 0) {
-			element_pos = projects.offset().top;
-			/*check if the window scroll position is higher 
-			  than that of the element's offset from the top of the document */
-			if (scroll_pos > element_pos) {
-				projects.addClass('animated');
-			};
-		}
-
-		/* Add animation class to Featured Projects */
-		projects = $('.featured-products-wrapper');
-		if (projects.length > 0) {
-			element_pos = projects.offset().top;
-			/*check if the window scroll position is higher 
-			  than that of the element's offset from the top of the document */
-			if (scroll_pos > element_pos) {
-				projects.addClass('animated');
-			};
-		}
-		/* Add animation class to Recent Posts Wrapper */
-		projects = $('.recent-posts-wrapper');
-		if (projects.length > 0) {
-			element_pos = projects.offset().top;
-			/*check if the window scroll position is higher 
-			  than that of the element's offset from the top of the document */
-			if (scroll_pos > element_pos) {
-				projects.addClass('animated');
-			};
-		}
-		/* Add animated-text class to full-width banner */
-		projects = $('.banner-text');
-		if (projects.length > 0) {
-			element_pos = projects.offset().top;
-			if (scroll_pos > element_pos) {
-				projects.addClass('animatedText');
-			}
-		}
-		/* Add animated-text class to Subscribe Form */
-		projects = $('.mc4wp-form-fields');
-		if (projects.length > 0) {
-			element_pos = projects.offset().top;
-			if (scroll_pos > element_pos) {
-				projects.addClass('animatedText');
-			}
-		}
-
-	}
 })

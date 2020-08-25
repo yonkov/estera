@@ -122,7 +122,7 @@ function estera_slider_customize_register( $wp_customize ) {
     $wp_customize->add_control(
         'slide_height',
         array(
-            'label' => esc_html__('Slider Height', 'highstarter'),
+            'label' => esc_html__('Slider Height', 'estera'),
             'section' => 'slider',
             'type' => 'text',
             'description' => esc_html__('Change the height of the slides. Write below a number in pixels (default is 420px).', 'estera'),
@@ -167,7 +167,7 @@ function estera_slider_customize_register( $wp_customize ) {
         array(
             'label' => esc_html__('Slide Background Size', 'estera'),
             'section' => 'slider',
-            'description' => esc_html__('Resize the slide to adjust to the width of the whole screen or choose to keep its initial width.', 'highstarter'),
+            'description' => esc_html__('Resize the slide to adjust to the width of the whole screen or choose to keep its initial width.', 'estera'),
             'type' => 'select',
             'choices' => array(
                 'initial' => esc_html('initial'),
@@ -310,7 +310,7 @@ function estera_slider_customize_register( $wp_customize ) {
 	$wp_customize->add_control( 'home_slider_excerpt_size', array(
 		'type' => 'number',
 		'label' => esc_html__( 'Slider Excerpt Size', 'estera' ),
-		'description' => esc_html__( 'This lets you choose how many words to show in your slide excerpt. Enter a number between 10 and 55. Default is 25. Please note that the slide excerpt length cannot be more than the post summary length spcified in the Blog Settings section.', 'blogg' ),
+		'description' => esc_html__( 'This lets you choose how many words to show in your slide excerpt. Enter a number between 10 and 55. Default is 25. Please note that the slide excerpt length cannot be more than the post summary length spcified in the Blog Settings section.', 'estera' ),
         'section' => 'slider',
         'input_attrs' => array(
             'min'   => 10,

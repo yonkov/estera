@@ -216,7 +216,7 @@ function estera_wishlist_count( ) {
 		return;
 	}
 ?>
-	<a class="wishlist-contents"  href="<?php echo esc_url( $yith_wcwl->get_wishlist_url() ); ?>" title="<?php esc_attr_e( 'View your whishlist','estera-business' ); ?>">
+	<a class="wishlist-contents"  href="<?php echo esc_url( $yith_wcwl->get_wishlist_url() ); ?>" title="<?php esc_attr_e( 'View your whishlist','estera' ); ?>">
 		<i class="icon_heart_alt"></i>	
 		<?php if ($wishlist_count>0) : ?>
 		<span class="wishlist-counter"><?php echo esc_html($wishlist_count);?></span>

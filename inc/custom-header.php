@@ -13,7 +13,7 @@
 /**
  * Set up the WordPress core custom header feature.
  *
- * @uses highstarter_header_style()
+ * @uses estera_header_style()
  */
 
 /* Create the header image object */

@@ -1,7 +1,7 @@
 === Estera ===
 
-Contributors: nravota12, freemius
-Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+Contributors: nravota12
+Tags: e-commerce, portfolio, blog, block-styles, one-column, two-columns, full-width-template, right-sidebar, left-sidebar, custom-background, custom header, custom-logo, custom-menu, featured-images, theme-options, threaded-comments, translation-ready
 
 Requires at least: 5.2
 Requires PHP: 5.6
@@ -10,7 +10,7 @@ Stable tag: 0.1
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-A starter theme called Estera.
+Estera is a lightweight WordPress theme optimized for creating blazing fast portfolio websites or WooCommerce online stores. The theme provides an exhaustive documentation and plenty of options in the theme customizer, which makes it accessible and easy to use even to people with little or no coding experience at all.
 
 == Description ==
 

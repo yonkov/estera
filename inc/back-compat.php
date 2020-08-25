@@ -26,7 +26,7 @@ add_action( 'after_switch_theme', 'estera_switch_theme' );
  */
 function estera_upgrade_notice() {
 	/* translators: %s: version number */
-	$message = sprintf( esc_html__( 'Estera requires at least WordPress version 4.7. You are running version %s. Please upgrade and try again.', 'Estera' ), esc_attr($GLOBALS['wp_version'] ) );
+	$message = sprintf( esc_html__( 'Estera requires at least WordPress version 4.7. You are running version %s. Please upgrade and try again.', 'estera' ), esc_attr($GLOBALS['wp_version'] ) );
 	printf( '<div class="error"><p>%s</p></div>', esc_html($message ));
 }
 
@@ -37,7 +37,7 @@ function estera_upgrade_notice() {
 function estera_customize() {
 	wp_die(
 	/* translators: %s: version number */
-		sprintf( esc_html__( 'Estera requires at least WordPress version 4.7. You are running version %s. Please upgrade and try again.', 'Estera' ), esc_attr($GLOBALS['wp_version'] )), '', array(
+		sprintf( esc_html__( 'Estera requires at least WordPress version 4.7. You are running version %s. Please upgrade and try again.', 'estera' ), esc_attr($GLOBALS['wp_version'] )), '', array(
 			'back_link' => true,
 		)
 	);
@@ -51,7 +51,7 @@ add_action( 'load-customize.php', 'estera_customize' );
 function estera_preview() {
 	if ( isset( $_GET['preview'] ) ) {
 		/* translators: %s: version number */
-		wp_die( sprintf( esc_html__( 'Estera requires at least WordPress version 4.7. You are running version %s. Please upgrade and try again.', 'Estera' ), esc_attr($GLOBALS['wp_version'] ) ) );
+		wp_die( sprintf( esc_html__( 'Estera requires at least WordPress version 4.7. You are running version %s. Please upgrade and try again.', 'estera' ), esc_attr($GLOBALS['wp_version'] ) ) );
 	}
 }
 add_action( 'template_redirect', 'estera_preview' );

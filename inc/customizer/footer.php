@@ -12,7 +12,7 @@ function estera_register_footer_customizer( $wp_customize )
         'sanitize_callback' => 'sanitize_hex_color',
     ) );
     $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'footer_background_color', array(
-        'label'   => esc_html__( 'Footer Background Color', 'highstarter' ),
+        'label'   => esc_html__( 'Footer Background Color', 'estera' ),
         'section' => 'custom_footer',
     ) ) );
     // Footer text color
@@ -21,7 +21,7 @@ function estera_register_footer_customizer( $wp_customize )
         'sanitize_callback' => 'sanitize_hex_color',
     ) );
     $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'footer_text_color', array(
-        'label'   => esc_html__( 'Footer Text Color', 'highstarter' ),
+        'label'   => esc_html__( 'Footer Text Color', 'estera' ),
         'section' => 'custom_footer',
     ) ) );
     /* Footer Links Color */
@@ -30,7 +30,7 @@ function estera_register_footer_customizer( $wp_customize )
         'sanitize_callback' => 'sanitize_hex_color',
     ) );
     $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'footer_link_color', array(
-        'label'   => esc_html__( 'Footer Links Color', 'highstarter' ),
+        'label'   => esc_html__( 'Footer Links Color', 'estera' ),
         'section' => 'custom_footer',
     ) ) );
 }

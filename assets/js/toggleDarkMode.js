@@ -9,17 +9,17 @@ document.addEventListener('DOMContentLoaded', function() {
 		//If dark mode is selected
 		if (this.classList.contains('active')) {
 			body.classList.add('dark-mode');
-			localStorage.setItem('highstarterNightMode', 'true');
+			localStorage.setItem('esteraNightMode', 'true');
 		} else {
 			body.classList.remove('dark-mode');
 			setTimeout(function(){
-				localStorage.removeItem('highstarterNightMode');
+				localStorage.removeItem('esteraNightMode');
 			}, 100);
 		}
 	})
 
 	//Check Storage. Keep user preference on page reload
-	if (localStorage.getItem('highstarterNightMode')) {
+	if (localStorage.getItem('esteraNightMode')) {
 		body.classList.add('dark-mode');
 		switcher.classList.add('active');
 	}
