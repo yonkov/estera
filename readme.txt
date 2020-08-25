@@ -1,6 +1,6 @@
 === Estera ===
 
-Contributors: nravota12
+Contributors: nravota12, freemius
 Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
 
 Requires at least: 5.2
@@ -10,7 +10,7 @@ Stable tag: 0.1
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Estera is a lightweight, yet highly customizable free WordPress theme, that can be used to create beautiful blogs, portfolio websites and e-commerce stores. 
+A starter theme called Estera.
 
 == Description ==
 
@@ -26,7 +26,7 @@ Description
 
 = Does this theme support any plugins? =
 
-Estera works with the most popular plugins and includes built-in support for WooCommerce, Infinite Scroll in Jetpack, Mailchimp for WordPress and YITH Wishlist.
+Estera includes support for WooCommerce and for Infinite Scroll in Jetpack.
 
 == Changelog ==
 
@@ -41,7 +41,6 @@ Estera works with the most popular plugins and includes built-in support for Woo
 * The theme uses code snippets from New York Business https://wordpress.org/themes/new-york-business/ (fixed Woocommerce menu), Blossom Travel https://wordpress.org/themes/blossom-travel/ (back to top button) and Highstarter (dark mode). License: GPLv2 or later
 
 == Resources ==
-
 * The theme uses Elegant Icon font, https://www.elegantthemes.com/blog/resources/elegant-icon-font License: GPLv2
 * The theme uses Swiper Slider, a vanilla js lightweight slider https://swiperjs.com/ License: MIT
 

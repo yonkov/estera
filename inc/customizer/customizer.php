@@ -23,3 +23,4 @@ require get_template_directory() . '/inc/customizer/colors.php';
 require get_template_directory() . '/inc/customizer/footer.php';
 /* Dark Mode */
 require get_template_directory() . '/inc/customizer/dark-mode.php';
+require get_template_directory() . '/inc/customizer/go-pro.php';

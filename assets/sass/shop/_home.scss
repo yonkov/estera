@@ -26,8 +26,9 @@ HOMEPAGE DEMO CONTENT */
 }
 
 .recent-products-wrapper {
-    
-    .swiper-button-next, .swiper-button-prev {
+
+    .swiper-button-next,
+    .swiper-button-prev {
         top: 35%;
     }
 }
@@ -169,10 +170,79 @@ HOMEPAGE DEMO CONTENT */
     z-index: 9;
 }
 
-.dark-mode .recent-product-meta h2 a, .dark-mode .featured-product-meta h2 a,
-.dark-mode .recent-post-meta a{
+.dark-mode .recent-product-meta h2 a,
+.dark-mode .featured-product-meta h2 a,
+.dark-mode .recent-post-meta a {
     color: #fff;
 }
+
+/* Animations */
+
+
+@keyframes estera_pb_slide {
+    0% {
+        opacity: .2;
+        -webkit-transform: scale3d(.75, .75, .75);
+        -moz-transform: scale3d(.75, .75, .75);
+        transform: scale3d(.75, .75, .75)
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: scale3d(1, 1, 1);
+        -moz-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1)
+    }
+}
+
+@-webkit-keyframes estera_pb_slide {
+    0% {
+        opacity: .2;
+        -webkit-transform: scale3d(.75, .75, .75);
+        -moz-transform: scale3d(.75, .75, .75);
+        transform: scale3d(.75, .75, .75)
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: scale3d(1, 1, 1);
+        -moz-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1)
+    }
+}
+
+@keyframes estera_pb_text {
+    0% {
+        opacity: .2;
+        -webkit-transform: perspective(2000px) rotateX(24deg);
+        -moz-transform: perspective(2000px) rotateX(24deg);
+        transform: perspective(2000px) rotateX(24deg);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: perspective(0) rotateX(0);
+        -moz-transform: perspective(0) rotateX(0);
+        transform: perspective(0) rotateX(0);
+    }
+}
+
+@-webkit-keyframes estera_pb_text {
+    0% {
+        opacity: .2;
+        -webkit-transform: perspective(2000px) rotateX(24deg);
+        -moz-transform: perspective(2000px) rotateX(24deg);
+        transform: perspective(2000px) rotateX(24deg);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: perspective(0) rotateX(0);
+        -moz-transform: perspective(0) rotateX(0);
+        transform: perspective(0) rotateX(0);
+    }
+}
+
 
 /* END OF FRONT PAGE DEMO CONTENT */
 

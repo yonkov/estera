@@ -4,58 +4,58 @@
  * Handles toggling the navigation menu for small screens and enables TAB key
  * navigation support for dropdown menus.
  */
-( function() {
+(function () {
 	var container, button, menu, links, i, len;
 
-	container = document.getElementById( 'site-navigation' );
-	if ( ! container ) {
+	container = document.getElementById('site-navigation');
+	if (!container) {
 		return;
 	}
 
-	button = container.getElementsByTagName( 'button' )[0];
-	if ( 'undefined' === typeof button ) {
+	button = container.getElementsByTagName('button')[0];
+	if ('undefined' === typeof button) {
 		return;
 	}
 
-	menu = container.getElementsByTagName( 'ul' )[0];
+	menu = container.getElementsByTagName('ul')[0];
 
 	// Hide menu toggle button if menu is empty and return early.
-	if ( 'undefined' === typeof menu ) {
+	if ('undefined' === typeof menu) {
 		button.style.display = 'none';
 		return;
 	}
 
-	if ( -1 === menu.className.indexOf( 'nav-menu' ) ) {
+	if (-1 === menu.className.indexOf('nav-menu')) {
 		menu.className += ' nav-menu';
 	}
 
-	button.onclick = function() {
-		if ( -1 !== container.className.indexOf( 'toggled' ) ) {
-			container.className = container.className.replace( ' toggled', '' );
-			button.setAttribute( 'aria-expanded', 'false' );
+	button.onclick = function () {
+		if (-1 !== container.className.indexOf('toggled')) {
+			container.className = container.className.replace(' toggled', '');
+			button.setAttribute('aria-expanded', 'false');
 		} else {
 			container.className += ' toggled';
-			button.setAttribute( 'aria-expanded', 'true' );
+			button.setAttribute('aria-expanded', 'true');
 		}
 	};
 
 	// Close small menu when user clicks outside
-	document.addEventListener( 'click', function( event ) {
-		var isClickInside = container.contains( event.target );
+	document.addEventListener('click', function (event) {
+		var isClickInside = container.contains(event.target);
 
-		if ( ! isClickInside ) {
-			container.className = container.className.replace( ' toggled', '' );
-			button.setAttribute( 'aria-expanded', 'false' );
+		if (!isClickInside) {
+			container.className = container.className.replace(' toggled', '');
+			button.setAttribute('aria-expanded', 'false');
 		}
-	} );
+	});
 
 	// Get all the link elements within the menu.
-	links = menu.getElementsByTagName( 'a' );
+	links = menu.getElementsByTagName('a');
 
 	// Each time a menu link is focused or blurred, toggle focus.
-	for ( i = 0, len = links.length; i < len; i++ ) {
-		links[i].addEventListener( 'focus', toggleFocus, true );
-		links[i].addEventListener( 'blur', toggleFocus, true );
+	for (i = 0, len = links.length; i < len; i++) {
+		links[i].addEventListener('focus', toggleFocus, true);
+		links[i].addEventListener('blur', toggleFocus, true);
 	}
 
 	/**
@@ -65,11 +65,11 @@
 		var self = this;
 
 		// Move up through the ancestors of the current link until we hit .nav-menu.
-		while ( -1 === self.className.indexOf( 'nav-menu' ) ) {
+		while (-1 === self.className.indexOf('nav-menu')) {
 			// On li elements toggle the class .focus.
-			if ( 'li' === self.tagName.toLowerCase() ) {
-				if ( -1 !== self.className.indexOf( 'focus' ) ) {
-					self.className = self.className.replace( ' focus', '' );
+			if ('li' === self.tagName.toLowerCase()) {
+				if (-1 !== self.className.indexOf('focus')) {
+					self.className = self.className.replace(' focus', '');
 				} else {
 					self.className += ' focus';
 				}
@@ -82,75 +82,135 @@
 	/**
 	 * Toggles `focus` class to allow submenu access on tablets.
 	 */
-	( function() {
+	(function () {
 		var touchStartFn,
-			parentLink = container.querySelectorAll( '.menu-item-has-children > a, .page_item_has_children > a' );
+			parentLink = container.querySelectorAll('.menu-item-has-children > a, .page_item_has_children > a');
 
-		if ( 'ontouchstart' in window ) {
-			touchStartFn = function( e ) {
+		if ('ontouchstart' in window) {
+			touchStartFn = function (e) {
 				var menuItem = this.parentNode;
 
-				if ( ! menuItem.classList.contains( 'focus' ) ) {
+				if (!menuItem.classList.contains('focus')) {
 					e.preventDefault();
-					for ( i = 0; i < menuItem.parentNode.children.length; ++i ) {
-						if ( menuItem === menuItem.parentNode.children[i] ) {
+					for (i = 0; i < menuItem.parentNode.children.length; ++i) {
+						if (menuItem === menuItem.parentNode.children[i]) {
 							continue;
 						}
-						menuItem.parentNode.children[i].classList.remove( 'focus' );
+						menuItem.parentNode.children[i].classList.remove('focus');
 					}
-					menuItem.classList.add( 'focus' );
+					menuItem.classList.add('focus');
 				} else {
-					menuItem.classList.remove( 'focus' );
+					menuItem.classList.remove('focus');
 				}
 			};
 
-			for ( i = 0; i < parentLink.length; ++i ) {
-				parentLink[i].addEventListener( 'touchstart', touchStartFn, false );
+			for (i = 0; i < parentLink.length; ++i) {
+				parentLink[i].addEventListener('touchstart', touchStartFn, false);
 			}
 		}
-	}( container ) );
-}() );
+	}(container));
+}());
 
-jQuery(function($){
+jQuery(function ($) {
 
-	$('#nav-icon1').click(function(){
+	$('#nav-icon1').click(function () {
 		$(this).toggleClass('open');
 	});
 
-    //back to top
-    $(window).scroll(function(){
-        if($(window).scrollTop() > 300) {
-            $('.back-to-top').addClass('show');
-        }else {
-            $('.back-to-top').removeClass('show');
-        }
-    });
+	//back to top
+	$(window).scroll(function () {
+		if ($(window).scrollTop() > 300) {
+			$('.back-to-top').addClass('show');
+		} else {
+			$('.back-to-top').removeClass('show');
+		}
+	});
 
-    $('.back-to-top').click(function(){
-        $('body, html').animate({
-            scrollTop: 0,
-        }, 600);
-    });
+	$('.back-to-top').click(function () {
+		$('body, html').animate({
+			scrollTop: 0,
+		}, 600);
+	});
 
 })
 
 // When the user scrolls down 20px from the top of the document, show the woocommerce fixed menu icons
-window.onscroll = function() {scrollFunction()};
 
-function scrollFunction() {
-  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-	if(document.getElementById("scroll-btn")) { 
-    	document.getElementById("scroll-btn").style.display = "block";
+jQuery(function ($) {
+
+	window.onscroll = function () {
+		scrollFunction();
+		animation()
+	};
+
+	function scrollFunction() {
+		if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+			if (document.getElementById("scroll-btn")) {
+				document.getElementById("scroll-btn").style.display = "block";
+			}
+			if (document.getElementById("scroll-cart")) {
+				document.getElementById("scroll-cart").style.display = "block";
+			}
+		} else {
+			if (document.getElementById("scroll-btn")) {
+				document.getElementById("scroll-btn").style.display = "none";
+			}
+			if (document.getElementById("scroll-cart")) {
+				document.getElementById("scroll-cart").style.display = "none";
+			}
+		}
 	}
-	if(document.getElementById("scroll-cart")) { 
-    	document.getElementById("scroll-cart").style.display = "block";
-	}	
-  } else {
-	if(document.getElementById("scroll-btn")) { 
-    	document.getElementById("scroll-btn").style.display = "none";
+
+	function animation() {
+		scroll_pos = $(window).scrollTop() + $(window).height();
+
+		/* Add animation class to Recent Projects */
+		var projects = $('.recent-products-wrapper');
+		if (projects.length > 0) {
+			element_pos = projects.offset().top;
+			/*check if the window scroll position is higher 
+			  than that of the element's offset from the top of the document */
+			if (scroll_pos > element_pos) {
+				projects.addClass('animated');
+			};
+		}
+
+		/* Add animation class to Featured Projects */
+		projects = $('.featured-products-wrapper');
+		if (projects.length > 0) {
+			element_pos = projects.offset().top;
+			/*check if the window scroll position is higher 
+			  than that of the element's offset from the top of the document */
+			if (scroll_pos > element_pos) {
+				projects.addClass('animated');
+			};
+		}
+		/* Add animation class to Recent Posts Wrapper */
+		projects = $('.recent-posts-wrapper');
+		if (projects.length > 0) {
+			element_pos = projects.offset().top;
+			/*check if the window scroll position is higher 
+			  than that of the element's offset from the top of the document */
+			if (scroll_pos > element_pos) {
+				projects.addClass('animated');
+			};
+		}
+		/* Add animated-text class to full-width banner */
+		projects = $('.banner-text');
+		if (projects.length > 0) {
+			element_pos = projects.offset().top;
+			if (scroll_pos > element_pos) {
+				projects.addClass('animatedText');
+			}
+		}
+		/* Add animated-text class to Subscribe Form */
+		projects = $('.mc4wp-form-fields');
+		if (projects.length > 0) {
+			element_pos = projects.offset().top;
+			if (scroll_pos > element_pos) {
+				projects.addClass('animatedText');
+			}
+		}
+
 	}
-	if(document.getElementById("scroll-cart")) { 
-    	document.getElementById("scroll-cart").style.display = "none";
-	}
-  }
-}
+})

@@ -6,9 +6,10 @@
 function estera_slider_customize_register( $wp_customize ) {
 
 	$wp_customize->add_section( 'slider', array(
-		'title' => esc_html__( 'Slider Options', 'estera' ),
-		'description'   => esc_html__( 'Customize the homepage slider to taste with the options below. This slider can display slides from the post type "post" or post type "product". To make it work, you need to create a few slides by adding posts and optionally assign a specific post category for the slides. You also need to add a featured image for each post, otherwise a default fallback image is dislayed. Our lightweight vanilla JavaScript slider will do all the rest for you.', 'estera' )
-	) );
+		'title' => esc_html__( 'Header Slider', 'estera' ),
+		'description'   => esc_html__( 'Customize the homepage slider to taste with the options below. This slider can display slides from the post type "post" or post type "product". To make it work, you need to create a few slides by adding posts and optionally assign a specific post category for the slides. You also need to add a featured image for each post, otherwise a default fallback image is dislayed. Our lightweight vanilla JavaScript slider will do all the rest for you.', 'estera' ),
+        'priority' => '99'
+        ) );
 
 	/* Show or hide Post Slider on Homepage */
     $wp_customize->add_setting(
