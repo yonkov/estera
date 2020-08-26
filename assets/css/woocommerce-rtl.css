@@ -2741,6 +2741,10 @@ p.stars:hover a::before {
 /* Wishlist */
 .yith-wcwl-add-button {
   display: flex; }
+/* Icon */
+.fa-heart-o::before {
+  content: "\e030";
+  font-family: ElegantIcons; }
 
 .add_to_wishlist.single_add_to_wishlist {
   display: flex;
