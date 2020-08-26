@@ -9,8 +9,7 @@
 	padding: 0;
 	position: absolute !important;
 	width: 1px;
-	word-wrap: normal !important; // Many screen reader and browser combinations announce broken words as they would appear visually.
-
+	word-wrap: normal !important;
 	&:focus {
 		background-color: $color__background-screen;
 		border-radius: 3px;
@@ -28,11 +27,10 @@
 		text-decoration: none;
 		top: 5px;
 		width: auto;
-		z-index: 100000; // Above WP toolbar.
+		z-index: 100000;
 	}
 }
 
-/* Do not show the outline on the skip link target. */
 #primary[tabindex="-1"]:focus {
 	outline: 0;
 }

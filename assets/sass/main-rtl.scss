@@ -1,62 +1,40 @@
 /*
 Theme Name: Estera
 
-Description: Adds support for languages written in a Right To Left (RTL) direction.
+Adds support for languages written in a Right To Left (RTL) direction.
 It's easy, just a matter of overwriting all the horizontal positioning attributes
 of your CSS stylesheet in a separate stylesheet file named rtl.css.
 
 See: https://codex.wordpress.org/Right_to_Left_Language_Support
 */
 
-
-/* 
- * Theme Name: Estera
- * The theme's global css file 
- */
-
  @import "variables-site/variables-site";
  @import "mixins/mixins-master";
  
- /*--------------------------------------
- # Normalize
- ----------------------------------------*/
+ /* Normalize*/
  @import "normalize";
  
- /*--------------------------------------
- # Typography
- ----------------------------------------*/
+ /* Typography */
  
  @import "typography";
  
- /*----------------------------------------
- # Accessibility
- -----------------------------------------*/
+ /* Accessibility */
  @import "modules/accessibility";
  
- /*----------------------------------------
- # Alignments
- ------------------------------------------*/
+ /* Alignments */
  @import "modules/alignments";
  
  
- /*---------------------------------------
- # Infinite scroll
- -----------------------------------------*/
+ /* Infinite scroll */
  @import "modules/infinite-scroll";
  
- /*------------------------------------
- # Media
- ------------------------------------*/
+ /* Media */
  @import "media/media";
  
- /*------------------------------------
- # Comments
- ------------------------------------*/
+ /* Comments */
  @import "comments";
 
- /*-----------------------------------
- # Custom css
- ----------------------------------- */
+ /* Custom css */
  
  /* Global CSS */
  
@@ -81,12 +59,8 @@ See: https://codex.wordpress.org/Right_to_Left_Language_Support
 
  @import "navigation/back-to-top";
 
-/*--------------------------------------------------------------
-# Elements
---------------------------------------------------------------*/
+/* Elements*/
 
-/* Inherit box-sizing to more easily change it's value on a component level.
-@link http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
 *,
 *::before,
 *::after {
@@ -150,9 +124,7 @@ table {
 	width: 100%;
 }
 
-/*--------------------------------------------------------------
-## Links
---------------------------------------------------------------*/
+/* Links */
 a {
 	color: rgb(50, 55, 60);
 }
@@ -180,9 +152,7 @@ a:active {
 	right: auto;
 }
 
-/*--------------------------------------------------------------
-## Menus
---------------------------------------------------------------*/
+/*  Menus */
 
 .main-navigation {
 	@media (min-width: 600px){
@@ -334,9 +304,7 @@ a:active {
 	padding-right: 60px;
 }
 
-/*--------------------------------------------------------------
-# Accessibility
---------------------------------------------------------------*/
+/* Accessibility */
 
 /* Text meant only for screen readers. */
 .screen-reader-text {
@@ -377,9 +345,7 @@ a:active {
 	outline: 0;
 }
 
-/*--------------------------------------------------------------
-# Alignments
---------------------------------------------------------------*/
+/* Alignments */
 .alignleft {
 	float: right;
 	margin-left: 1.5em;
@@ -400,9 +366,7 @@ a:active {
 	margin-bottom: 1.5em;
 }
 
-/*--------------------------------------------------------------
-# Widgets
---------------------------------------------------------------*/
+/* Widgets */
 
 .widget > ul {
     margin-right: 0;
@@ -426,13 +390,9 @@ a:active {
 	max-width: 100%;
 }
 
-/*--------------------------------------------------------------
-# Content
---------------------------------------------------------------*/
+/* Content */
 
-/*--------------------------------------------------------------
-## Posts and pages
---------------------------------------------------------------*/
+/* Posts and pages */
 .sticky {
 	display: block;
 }
@@ -452,9 +412,7 @@ a:active {
 	margin: 0 0 1.5em;
 }
 
-/*--------------------------------------------------------------
-# Infinite scroll
---------------------------------------------------------------*/
+/* Infinite scroll */
 
 /* Hide the Posts Navigation and the Footer when Infinite Scroll is in use. */
 .infinite-scroll .posts-navigation,

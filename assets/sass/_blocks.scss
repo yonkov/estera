@@ -1,3 +1,10 @@
+/* Support full width block layout when there is full width page layout */
+
+.estera-full-width .alignfull {
+	margin: 32px calc(50% - 50vw);
+	max-width: 100vw;
+	width: 100vw;
+}
 
 /* Latest Posts */
 
@@ -7,7 +14,6 @@
 }
 
 /* Tags */
-
 
 /* Tags Widget */
 .wp-block-tag-cloud a {

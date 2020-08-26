@@ -1,4 +1,3 @@
-
 <?php
 /*
  ** Allow users to change theme colors through the WordPress Customizer

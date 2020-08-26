@@ -7,7 +7,7 @@ function estera_slider_customize_register( $wp_customize ) {
 
 	$wp_customize->add_section( 'slider', array(
 		'title' => esc_html__( 'Header Slider', 'estera' ),
-		'description'   => esc_html__( 'Customize the homepage slider to taste with the options below. This slider can display slides from the post type "post" or post type "product". To make it work, you need to create a few slides by adding posts and optionally assign a specific post category for the slides. You also need to add a featured image for each post, otherwise a default fallback image is dislayed. Our lightweight vanilla JavaScript slider will do all the rest for you.', 'estera' ),
+		'description'   => esc_html__( 'Customize the homepage slider to taste with the options below. This slider can display slides from the post type "post" or post type "product". To make it work, you need to create a few slides by adding posts and optionally assign a specific post category for the slides. You also need to add a featured image for each post, otherwise a default fallback image is dislayed.', 'estera' ),
         'priority' => '99'
         ) );
 
@@ -114,7 +114,7 @@ function estera_slider_customize_register( $wp_customize ) {
     $wp_customize->add_setting(
         'slide_height',
         array(
-            'default' => '600px',
+            'default' => '420px',
             'sanitize_callback' => 'sanitize_text_field'
         )
     );
@@ -352,9 +352,9 @@ function estera_customize_swiper_slider (){
 
     $slider_arrows = get_theme_mod('display-slider-arrows', 1)? 'block': 'none'; 
     $overlay  = get_theme_mod('cover_template_overlay_opacity', '1');
-    $slider_height = get_theme_mod('slide_height', '600px');
+    $slider_height = get_theme_mod('slide_height', '420px');
     $slider_size = get_theme_mod('slide-background-size', 'cover');
-    $slider_position = get_theme_mod('slide-background-position', 'center');
+    $slider_position = get_theme_mod('slide-background-position', 'top');
     $trimmed_height = str_replace(' ', '', $slider_height);
     $slider_animation = get_theme_mod('display-slider-animation', 0); ?>
 	
@@ -418,7 +418,7 @@ function estera_customize_swiper_slider (){
 <?php
 }
 
-add_action ('wp_footer', 'estera_customize_swiper_slider');
+add_action ('wp_head', 'estera_customize_swiper_slider');
 
 /**
  * Function to list post categories in the dropdown customizer control
