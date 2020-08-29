@@ -30,16 +30,17 @@
 			<?php
 				the_custom_logo();
 			if (display_header_text()==true) : ?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-				
-				<?php $estera_description = get_bloginfo( 'description', 'display' );
-				
-				if ( $estera_description || is_customize_preview() ) :
-					?>
-					<p class="site-description"><?php echo $estera_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
-				<?php endif; 
-
-			endif; ?>
+			    <div class="site-title-wrapper">
+    				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+    				
+    				<?php $estera_description = get_bloginfo( 'description', 'display' );
+    				
+    				if ( $estera_description || is_customize_preview() ) :
+    					?>
+    					<p class="site-description"><?php echo $estera_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
+    				<?php endif; ?> 
+                </div> 
+			<?php endif; ?>
 		</div><!-- .site-branding -->
 		
 		<nav id="site-navigation" class="main-navigation">

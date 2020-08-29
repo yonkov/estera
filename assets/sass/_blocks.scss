@@ -1,19 +1,19 @@
 /* Support full width block layout when there is full width page layout */
 
 .estera-full-width .alignfull {
-	margin: 32px calc(50% - 50vw);
+	margin: 0 calc(50% - 50vw);
 	max-width: 100vw;
 	width: 100vw;
 }
 
-/* Latest Posts */
+/* Latest Posts Block */
 
 .wp-block-latest-posts li a {
     padding: 1em 2em 0 0;
     display: inline-block;
 }
 
-/* Tags */
+/* Tags Block */
 
 /* Tags Widget */
 .wp-block-tag-cloud a {
@@ -54,6 +54,18 @@
         color: $color__dark_gray;
         text-transform: uppercase;
     }
+}
+
+/* Blockquote */
+
+.wp-block-pullquote {
+    border-top: 3px solid;
+    border-bottom: 3px solid;
+}
+
+.wp-block-pullquote blockquote {
+    border: none;
+    margin: 0;
 }
 
 /* Dark mode */

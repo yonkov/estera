@@ -9,11 +9,11 @@
 
  
 function estera_is_select_product (){
-    return 'from-product' == get_theme_mod( 'select_slider_from', 'from-product' );
+    return 'product' == get_theme_mod( 'select_slider_from', 'product' );
 }
 
 function estera_is_select_post (){
-    return 'from-post' == get_theme_mod( 'select_slider_from', 'from-post' );
+    return 'post' == get_theme_mod( 'select_slider_from', 'post' );
 }
 
 /* Callback to check if WooCommerce plugin is active */

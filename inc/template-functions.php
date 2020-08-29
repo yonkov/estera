@@ -39,7 +39,7 @@ function estera_body_classes( $classes )
     /* Add full-width body class when full-width sidebar is selected globally */
     $global_sidebar = get_theme_mod( 'default_sidebar_layout', 'one' );
     $is_custom_sidebar = get_theme_mod( 'custom_sidebar_layout', 0 );
-    if ( $global_sidebar == 'two' && !$is_custom_sidebar ) {
+    if ( $global_sidebar == 'two' ) {
         $classes[] = 'estera-full-width';
     }
     return $classes;
@@ -117,7 +117,7 @@ function estera_header_slider()
     
     global  $post ;
     //determine desired post type
-    $slider_post_type = get_theme_mod( 'select_slider_from', 'from-post' );
+    $slider_post_type = get_theme_mod( 'select_slider_from', 'post' );
     //Get the desired post category from theme customizer
     $slider_post_category = get_theme_mod( 'home_slider_category', '0' );
     //Get the desired product category from theme customizer
@@ -127,7 +127,7 @@ function estera_header_slider()
     $button_text = get_theme_mod( 'slider_button_text', __( 'Read More', 'estera' ) );
     //post query
     
-    if ( $slider_post_type == 'from-post' ) {
+    if ( $slider_post_type == 'post' ) {
         $args = array(
             'posts_per_page' => $slider_number,
             'post_type'      => 'post',
@@ -136,22 +136,31 @@ function estera_header_slider()
         //product query
     } else {
         
-        if ( $slider_product_category ) {
-            $args = array(
-                'posts_per_page' => $slider_number,
-                'post_type'      => 'product',
-                'tax_query'      => array( array(
-                'taxonomy' => 'product_cat',
-                'terms'    => $slider_product_category,
-                'operator' => 'IN',
-            ) ),
-            );
+        if ( $slider_post_type == 'product' ) {
+            
+            if ( $slider_product_category ) {
+                $args = array(
+                    'posts_per_page' => $slider_number,
+                    'post_type'      => 'product',
+                    'tax_query'      => array( array(
+                    'taxonomy' => 'product_cat',
+                    'terms'    => $slider_product_category,
+                    'operator' => 'IN',
+                ) ),
+                );
+            } else {
+                $args = array(
+                    'posts_per_page' => $slider_number,
+                    'post_type'      => 'product',
+                );
+            }
+        
         } else {
             $args = array(
                 'posts_per_page' => $slider_number,
-                'post_type'      => 'product',
+                'post_type'      => $slider_post_type,
             );
-        }
+         }
     
     }
     
@@ -159,66 +168,65 @@ function estera_header_slider()
     
     if ( $slider_query->have_posts() ) {
         ?>
-		
-		<div class="header-slider-wrapper swiper-container">
-			<div class="swiper-wrapper">
-			<?php 
+
+<div class="header-slider-wrapper swiper-container">
+    <div class="swiper-wrapper">
+        <?php 
         while ( $slider_query->have_posts() ) {
             $slider_query->the_post();
             $url = ( has_post_thumbnail( get_the_ID() ) ? get_the_post_thumbnail_url( get_the_ID(), 'full' ) : '/wp-content/themes/estera/assets/img/fallback-header.jpg' );
             ?>
 
-				<div class="header-slider-item swiper-slide" 
-				style="background: url('<?php 
+        <div class="header-slider-item swiper-slide" style="background: url('<?php 
             echo  esc_attr( $url ) ;
             ?>') no-repeat">
-					<div class="image-overlay">
-						<div class="text-wrapper">
-							<h2><a href="<?php 
+            <div class="image-overlay">
+                <div class="text-wrapper">
+                    <h2><a href="<?php 
             the_permalink();
             ?>"><?php 
             the_title();
             ?></a></h2>
-							<?php 
+                    <?php 
             
             if ( $slider_excerpt_size ) {
                 ?>
-								<p><?php 
+                    <p><?php 
                 echo  esc_html( estera_slide_excerpt( $slider_excerpt_size ) ) ;
                 ?></p>
-							<?php 
+                    <?php 
             }
             
             
             if ( $button_text ) {
                 ?>
-							<div class="button-wrapper">
-								<a href="<?php 
+                    <div class="button-wrapper">
+                        <a href="<?php 
                 the_permalink();
                 ?>"><button><?php 
                 echo  esc_html( $button_text ), ( is_rtl() ? ' &larr;' : ' &rarr;' ) ;
                 ?></button></a>
-							</div>
-							<?php 
+                    </div>
+                    <?php 
             }
             
             ?>
-						</div>
-					</div>
-				</div>
-			
-			<?php 
+                </div>
+            </div>
+        </div>
+
+        <?php 
         }
         wp_reset_postdata();
         ?>
-			</div>
-		    <!-- Slider Pagination -->
-			<div class="swiper-pagination"></div>
-			<!-- Slider Arrows -->
-			<div class="swiper-button-next"></div>
-			<div class="swiper-button-prev"></div>
-		</div>
-	<?php 
+    </div>
+    <!-- Slider Pagination -->
+    <div class="swiper-pagination"></div>
+    <!-- Slider Arrows -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+</div>
+<?php 
     }
 
 }
@@ -277,10 +285,10 @@ add_filter( 'excerpt_more', 'estera_excerpt_more' );
 function estera_back_to_top()
 {
     ?>
-    <button class="back-to-top">
-		<i class="arrow_carrot-2up"></i>
-	</button>
-    <?php 
+<button class="back-to-top">
+    <i class="arrow_carrot-2up"></i>
+</button>
+<?php 
 }
 
 add_action( 'estera_footer', 'estera_back_to_top', 45 );

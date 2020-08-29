@@ -482,7 +482,7 @@ textarea {
 .wrapper {
   width: 100%;
   max-width: 1180px;
-  padding: 1em 15px; }
+  padding: 1em 15px 0; }
   @media (min-width: 40em) {
   .wrapper {
     display: flex;
@@ -597,11 +597,13 @@ textarea {
   @media (min-width: 600px) {
   .main-navigation-container {
     display: flex; } }
+  .main-navigation-container .custom-logo-link {
+    max-width: 100px; }
   .main-navigation-container .site-branding {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     min-width: 25%; }
-  .main-navigation-container .site-branding .custom-logo-link img {
-    max-height: 3rem;
-    max-width: 10rem; }
   .main-navigation-container .site-branding .site-title {
     margin: 0; }
   .main-navigation-container .site-branding .site-description {
