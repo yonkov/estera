@@ -174,11 +174,11 @@ function estera_header_slider()
         <?php 
         while ( $slider_query->have_posts() ) {
             $slider_query->the_post();
-            $url = ( has_post_thumbnail( get_the_ID() ) ? get_the_post_thumbnail_url( get_the_ID(), 'full' ) : '/wp-content/themes/estera/assets/img/fallback-header.jpg' );
+            $url = ( has_post_thumbnail( get_the_ID() ) ? get_the_post_thumbnail_url( get_the_ID(), 'full' ) : get_template_directory_uri() . '/assets/img/fallback-header.jpg' );
             ?>
 
         <div class="header-slider-item swiper-slide" style="background: url('<?php 
-            echo  esc_attr( $url ) ;
+            echo esc_url( $url ) ;
             ?>') no-repeat">
             <div class="image-overlay">
                 <div class="text-wrapper">
