@@ -25,24 +25,24 @@ if ( ! defined( 'ABSPATH' ) ) {
  * Each tab is an array containing title, callback and priority.
  * @see woocommerce_default_product_tabs()
  */
-$tabs = apply_filters( 'woocommerce_product_tabs', array() );
+$estera_tabs = apply_filters( 'woocommerce_product_tabs', array() );
 
-if ( ! empty( $tabs ) ) : ?>
+if ( ! empty( $estera_tabs ) ) : ?>
 
     <div class="q_tabs boxed woocommerce-tabs">
         <ul class="tabs clearfix tabs-nav">
-            <?php foreach ( $tabs as $key => $tab ) : ?>
+            <?php foreach ( $estera_tabs as $estera_key => $estera_tab ) : ?>
 
-                <li class="<?php echo esc_attr( $key ); ?>_tab">
-                    <a href="#tab-<?php echo esc_attr( $key ); ?>"><?php echo apply_filters( 'woocommerce_product_' . $key . '_tab_title', esc_html( $tab['title'] ), $key ) ?></a>
+                <li class="<?php echo esc_attr( $estera_key ); ?>_tab">
+                    <a href="#tab-<?php echo esc_attr( $estera_key ); ?>"><?php echo apply_filters( 'woocommerce_product_' . $estera_key . '_tab_title', esc_html( $estera_tab['title'] ), $estera_key ) ?></a>
                 </li>
 
             <?php endforeach; ?>
         </ul>
-        <?php foreach ( $tabs as $key => $tab ) : ?>
+        <?php foreach ( $estera_tabs as $estera_key => $estera_tab ) : ?>
 
-            <div class="panel entry-content tabs-container" id="tab-<?php echo esc_attr( $key ); ?>">
-                <?php call_user_func( $tab['callback'], $key, $tab ) ?>
+            <div class="panel entry-content tabs-container" id="tab-<?php echo esc_attr( $estera_key ); ?>">
+                <?php call_user_func( $estera_tab['callback'], $estera_key, $estera_tab ) ?>
             </div>
 
         <?php endforeach; ?>

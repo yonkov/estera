@@ -4,14 +4,14 @@ Theme URI: http://nasiothemes.com/estera/
 Author: Atanas Yonkov
 Author URI: https://nasiothemes.com
 Description: Estera is a lightweight, SEO friendly WordPress theme, optimized for creating blazing fast WooCommerce online stores and portfolio websites. The theme is very intuitive to use and provides an exhaustive documentation and plenty of free options in the theme customizer, which makes it accessible and easy to use even to people with little or no coding experience at all. The theme is built with the Gutenberg editor in mind but it also integrates well with the Classic editor. The theme features a beautiful header slider, powered by posts or WooCommerce products. The versatile theme works smoothly with the most popular WordPress plugins, so you can easily and quickly create a high-conversion e-commerce or portfolio website 
-Version: 0.1
-Requires at least: 5.2
+Version: 0.2
+Requires at least: 4.7
 Requires PHP: 5.6
 Tested up to: 5.5
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: estera
-Tags: e-commerce, portfolio, blog, block-styles, one-column, two-columns, full-width-template, right-sidebar, left-sidebar, custom-background, custom-header, custom-logo, custom-menu, featured-images, theme-options, threaded-comments, translation-ready
+Tags: e-commerce, portfolio, blog, block-styles, wide-blocks, one-column, two-columns, right-sidebar, left-sidebar, custom-background, custom-colors, custom-header, custom-logo, custom-menu, featured-images, rtl-language-support, theme-options, threaded-comments, translation-ready
 */
 
 /**

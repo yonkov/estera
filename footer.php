@@ -27,7 +27,7 @@
 		<?php else :
 			esc_html_e('Designed by', 'estera'); ?>
 			<a href="<?php echo esc_url( 'https://nasiothemes.com/' ); ?>" class="imprint">
-            	<?php printf( __( '%s', 'estera' ), 'Nasio Themes' );?>
+            	<?php esc_html_e ( 'Nasio Themes', 'estera' ); ?>
         	</a>
 			<span class="sep"> || </span>
 				<?php

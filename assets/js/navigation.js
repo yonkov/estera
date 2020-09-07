@@ -109,45 +109,38 @@
 			}
 		}
 	}(container));
+
+	/* Toggle hamburger menu */
+	document.getElementById('nav-icon1').addEventListener('click', function () {
+		this.classList.toggle('open');
+	});
+
+	// Smooth scroll to top when back-to-top button is pressed
+	document.getElementsByClassName('back-to-top')[0].addEventListener('click', function () {
+		window.scrollTo({
+			top: 0,
+			behavior: 'smooth'
+		});
+	})
+
 }());
 
-jQuery(function ($) {
-
-	$('#nav-icon1').click(function () {
-		$(this).toggleClass('open');
-	});
-
-	//back to top
-	$(window).scroll(function () {
-		if ($(window).scrollTop() > 300) {
-			$('.back-to-top').addClass('show');
-		} else {
-			$('.back-to-top').removeClass('show');
-		}
-	});
-
-	$('.back-to-top').click(function () {
-		$('body, html').animate({
-			scrollTop: 0,
-		}, 600);
-	});
-
-})
-
-// When the user scrolls down 20px from the top of the document, show the woocommerce fixed menu icons
+// When the user scrolls down 100px from the top of the document, show the woocommerce fixed menu icons and back to top button
 
 window.onscroll = function () {
 	scrollFunction();
 };
 
 function scrollFunction() {
-	if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+	if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
 		if (document.getElementById("scroll-btn")) {
 			document.getElementById("scroll-btn").style.display = "block";
 		}
 		if (document.getElementById("scroll-cart")) {
 			document.getElementById("scroll-cart").style.display = "block";
 		}
+		document.getElementsByClassName('back-to-top')[0].style.display = "block";
+
 	} else {
 		if (document.getElementById("scroll-btn")) {
 			document.getElementById("scroll-btn").style.display = "none";
@@ -155,5 +148,6 @@ function scrollFunction() {
 		if (document.getElementById("scroll-cart")) {
 			document.getElementById("scroll-cart").style.display = "none";
 		}
+		document.getElementsByClassName('back-to-top')[0].style.display = "none";
 	}
 }

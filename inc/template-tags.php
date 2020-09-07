@@ -75,7 +75,7 @@ if ( ! function_exists( 'estera_entry_footer' ) ) :
 				$categories_list = get_the_category_list( esc_html__( ', ', 'estera' ) );
 				if ( $categories_list ) {
 					/* translators: 1: list of categories. */
-					printf( '<span class="cat-links">' . esc_html__( '%1$s', 'estera' ) . '</span>', $categories_list ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+					printf( '<span class="cat-links">' . esc_html__( '%s', 'estera' ) . '</span>', $categories_list ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 				}
 			
 			}

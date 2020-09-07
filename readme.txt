@@ -1,12 +1,11 @@
 === Estera ===
 
 Contributors: nravota12
-Tags: e-commerce, portfolio, blog, block-styles, one-column, two-columns, full-width-template, right-sidebar, left-sidebar, custom-background, custom header, custom-logo, custom-menu, featured-images, theme-options, threaded-comments, translation-ready
-
-Requires at least: 5.2
+Tags: e-commerce, portfolio, blog, block-styles, wide-blocks, one-column, two-columns, right-sidebar, left-sidebar, custom-background, custom-colors, custom-header, custom-logo, custom-menu, featured-images, rtl-language-support, theme-options, threaded-comments, translation-ready
+Requires at least: 4.7
 Requires PHP: 5.6
 Tested up to: 5.5
-Stable tag: 0.1
+Stable tag: 0.2
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -22,13 +21,10 @@ Description
 2. Click Upload Theme and Choose File, then select the theme's .zip file. Click Install Now.
 3. Click Activate to use your new theme right away.
 
-== Frequently Asked Questions ==
-
-= Does this theme support any plugins? =
-
-Estera includes support for WooCommerce and for Infinite Scroll in Jetpack.
-
 == Changelog ==
+
+= 0.2 - September 2020 =
+* Remove jQuery dependency. Optimize code. Validate code with Theme sniffer and readme validator.
 
 = 0.1 - August 2020 =
 * Initial release

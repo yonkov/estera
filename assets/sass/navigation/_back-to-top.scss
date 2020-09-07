@@ -1,8 +1,9 @@
 .back-to-top {
+	display: none;
 	padding: 0;
 	min-height: auto;
 	position: fixed;
-    bottom: 0;
+    bottom: 30px;
     border: 0;
 	right: 5px;
 	width: 41px;
@@ -13,22 +14,12 @@
 	cursor: pointer;
 	color: #fff;
 	font-size: 1.55em;
-	opacity: 0;
-	visibility: hidden;
 	z-index: 999;
-	-webkit-transition: all ease 0.35s;
-	-moz-transition: all ease 0.35s;
+	filter: alpha(opacity=70);
 	transition: all ease 0.35s;
 }
 
-.back-to-top.show {
-	bottom: 30px;
-	opacity: 1;
-	filter: alpha(opacity=70);
-	visibility: visible;
-}
-
-.back-to-top.show:hover {
+.back-to-top:hover {
 	opacity: 1;
 	filter: alpha(opacity=100);
 }
