@@ -3,43 +3,41 @@
  * The theme's global css file 
  */
 
- /* Colors */
+ // Colors
 @import "variables-site/variables-site";
-/* Mixins */
+// Mixins
 @import "mixins/mixins-master";
 
-/* Normalize */
+// Normalize
 @import "normalize";
 
-/* Blocks */
+// Blocks
 
 @import "blocks";
 
-/* Typography */
+// Typography
 
 @import "typography";
 
-/* Navigation */
+// Navigation
 @import "navigation/navigation";
 
-/* Accessibility*/
+// Accessibility
 @import "modules/accessibility";
 
-/* Alignments */
+// Alignments
 @import "modules/alignments";
 
-/*Infinite scroll */
+// Infinite scroll
 @import "modules/infinite-scroll";
 
-/* Media*/
+// Media
 @import "media/media";
 
-/* Comments */
+// Comments
 @import "comments";
 
-/* Custom theme css */
-
-/* Global CSS */
+// Global CSS
 
 @import "global";
 
@@ -49,15 +47,15 @@
 
 @import "header";
 
-/* Widgets */
+// Widgets
 @import "sidebar";
 
-/* Footer */
+// Footer
 @import "footer";
 
 @import "entry-meta";
 
 @import "post-loop";
 
-/* Homepage */
+// Homepage
 @import "home";

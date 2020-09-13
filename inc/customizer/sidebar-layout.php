@@ -10,7 +10,7 @@ function estera_register_layout_theme_customizer( $wp_customize )
 {
     $wp_customize->add_section( 'layout_options', array(
         'title'       => esc_html__( 'Sidebar Layout', 'estera' ),
-        'description' => esc_html__( 'Override global sidebar position for specific site content - Go Pro Version', 'estera' ),
+        'description' => esc_html__( 'Override global sidebar options for specific site content - Go Pro Version', 'estera' ),
     ) );
     /* 
      * Default Sidebar Layout

@@ -5,15 +5,13 @@ html {
 	-webkit-text-size-adjust: 100%;
 }
 
-/**
- * Remove the margin in all browsers.
- */
+//Remove the margin in all browsers.
 
 body {
 	margin: 0;
 }
 
-/* Render the `main` element consistently in IE. */
+// Render the `main` element consistently in IE
 
 main {
 	display: block;
@@ -83,7 +81,7 @@ img {
 	border-style: none;
 }
 
-/* Forms */
+// Forms
 
 button,
 input,
@@ -182,7 +180,7 @@ summary {
 	display: list-item;
 }
 
-/* Add the correct display in IE 10. */
+// Add the correct display in IE 10
 template {
 	display: none;
 }

@@ -16,7 +16,7 @@ $woocommerce__color-info: #3d9cd2;
 // Woocommerce default css file
 @import "shop/default";
 
-/* Gutenberg Custom css styles */
+// Gutenberg Custom css styles
 
 @import "shop/blocks";
 
@@ -26,43 +26,32 @@ $woocommerce__color-info: #3d9cd2;
 
 // Layout
 @import "shop/shop";
-/**
- * Shop tables
- */
+
+// Shop tables
 @import "shop/tables";
 
-/**
- * Products
- */
- @import "shop/products";
+// Products
+@import "shop/products";
  
-/**
- * Single product
- */
+// Single product
 @import "shop/single-product";
 
-/**
- * Checkout
- */
+// Checkout
 @import "shop/checkout";
 
-/**
- * General WooCommerce components
- */
+// General WooCommerce components
 @import "shop/components";
 
-/**
- * WooCommerce widgets
- */
+// WooCommerce widgets
 @import "shop/widgets";
 
 @import "shop/cart";
 
-/* Home Page */
+// Home Page
 
 @import "shop/home";
 
-/* RTL Woocommerce Styles */
+// RTL Woocommerce Styles
 
 .woocommerce ul.cart_list li img,
 .woocommerce ul.product_list_widget li img {
@@ -117,9 +106,9 @@ $woocommerce__color-info: #3d9cd2;
     margin: 0;  
 } 
 
-/* Single */
+// Single
 
-/* Sinlge poduct page fix */
+// Sinlge poduct page fix
 
 .woocommerce.single span.onsale {
     left: auto;
@@ -135,7 +124,7 @@ $woocommerce__color-info: #3d9cd2;
     float: right;
 }
 
-/* Search gallery */
+// Search gallery
 
 .woocommerce div.product div.images .woocommerce-product-gallery__trigger {
     position: absolute;
@@ -144,13 +133,13 @@ $woocommerce__color-info: #3d9cd2;
     left: .5em
 }
 
-/* Rating on single product page */
+// Rating on single product page
 
 .woocommerce .woocommerce-product-rating .star-rating {
     float: none;
 }
 
-/* Cart */
+// Cart
 
 @media (max-width: 767px) {
 
@@ -178,13 +167,13 @@ table.shop_table_responsive tr td {
     }
 }
 
-/* Additional fields */
+// Additional fields
 
 .woocommerce table.shop_attributes {
     text-align: right;
 }
 
-/* Menu icons */
+// Menu icons
 .cart-counter {
     right: auto;
     left: 2px;
@@ -208,7 +197,7 @@ table.shop_table_responsive tr td {
     float: right;
 }
 
-/* Fixed menu scss */
+// Fixed menu scss
 
 .topcorner {
     float: left;
@@ -247,7 +236,7 @@ table.shop_table_responsive tr td {
      background-color:#FFFFFF;
    }
 
-/* GUTENBERG BLOCKS */
+// GUTENBERG BLOCKS
 
 .wp-block-button.wc-block-grid__product-add-to-cart {
     right: auto;
@@ -258,7 +247,7 @@ table.shop_table_responsive tr td {
     right: 5px;
     left: auto;
 }
-/* Wishlist */
+// Wishlist
 
 .home .wishlist-widget-icon-wrapper {
     left: 10px;
@@ -279,7 +268,11 @@ table.shop_table_responsive tr td {
     left: auto;
 }
 
-/* Demo content */
+.yith-wcwl-icon {
+    padding-left: 5px;
+}
+
+// Demo content
 
 .button.product_type_simple.add_to_cart_button.ajax_add_to_cart.added::after {
     font-family: WooCommerce;
@@ -289,4 +282,3 @@ table.shop_table_responsive tr td {
     left: auto;
     right: 1em
 }
-

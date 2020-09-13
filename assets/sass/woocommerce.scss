@@ -17,7 +17,7 @@ $woocommerce__color-info: #3d9cd2;
 
 @import "shop/default";
 
-/* Gutenberg Custom css styles */
+// Gutenberg Custom css styles
 
 @import "shop/blocks";
 
@@ -27,46 +27,33 @@ $woocommerce__color-info: #3d9cd2;
 
 // Layout
 @import "shop/shop";
-/**
- * Shop tables
- */
+
+// Shop tables
 @import "shop/tables";
 
-/**
- * Products
- */
+// Products
  @import "shop/products";
  
-/**
- * General WooCommerce components
- */
+// General WooCommerce components
 @import "shop/components";
 
-/**
- * WooCommerce widgets
- */
+// WooCommerce widgets
 @import "shop/widgets";
 
-/**
-* Single product
-*/
+// Single product
+
 @import "shop/single-product";
 
-/**
-* Checkout
-*/
+// Checkout 
 @import "shop/checkout";
 
 
 @import "shop/cart";
 
-/* Woocommerce account page */
+// Woocommerce account page
+
 @import "shop/account";
 
-/* Fixed navigation */
+// Fixed navigation
 
 @import "shop/fixed-menu";
-
-/* Home Page */
-
-@import "shop/home"

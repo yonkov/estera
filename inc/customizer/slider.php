@@ -229,6 +229,13 @@ add_action( 'customize_register', 'estera_slider_customize_register' );
  */
 function estera_customize_swiper_slider()
 {
+    $slider_display = get_theme_mod( 'display-slider', 1 );
+    
+    if ( !$slider_display ) {
+        return;
+        //Stop right here if the user does not want a header slider
+    }
+    
     $slider_arrows = ( get_theme_mod( 'display-slider-arrows', 1 ) ? 'block' : 'none' );
     $overlay = get_theme_mod( 'cover_template_overlay_opacity', '1' );
     $slider_height = get_theme_mod( 'slide_height', '600px' );
@@ -283,7 +290,7 @@ function estera_customize_swiper_slider()
 
     <script>
         var mySwiper = new Swiper('.header-slider-wrapper', {
-            speed: 400,
+            speed: 500,
             loop: true,
             preloadImages: false,
             lazy: true,
@@ -358,3 +365,17 @@ function estera_slide_woo_cats()
     return $cats;
 }
 
+function estera_post_types()
+{
+    // We create a variable to house our post types
+    $post_types = get_post_types( array(
+        'public' => true,
+    ), 'object' );
+    $types = array();
+    // we loop and assign.
+    foreach ( $post_types as $type ) {
+        // name is the registered name and label is what the user sees.
+        $types[$type->name] = $type->label;
+    }
+    return $types;
+}

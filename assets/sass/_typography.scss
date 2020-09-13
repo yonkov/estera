@@ -44,6 +44,8 @@ i {
 
 blockquote {
 	margin: 0 1.5em;
+	border-left: 5px solid rgba(255,73,154, .5);
+	padding: 1px 10px;
 }
 
 address {
@@ -82,4 +84,8 @@ ins {
 
 big {
 	font-size: 125%;
+}
+
+.dark-mode blockquote {
+	background: transparent;
 }

@@ -115,17 +115,9 @@
 		this.classList.toggle('open');
 	});
 
-	// Smooth scroll to top when back-to-top button is pressed
-	document.getElementsByClassName('back-to-top')[0].addEventListener('click', function () {
-		window.scrollTo({
-			top: 0,
-			behavior: 'smooth'
-		});
-	})
-
 }());
 
-// When the user scrolls down 100px from the top of the document, show the woocommerce fixed menu icons and back to top button
+// When the user scrolls down 100px from the top of the document, show the woocommerce fixed menu icons
 
 window.onscroll = function () {
 	scrollFunction();
@@ -151,3 +143,14 @@ function scrollFunction() {
 		document.getElementsByClassName('back-to-top')[0].style.display = "none";
 	}
 }
+
+// Smooth scroll to top when back-to-top button is pressed
+document.getElementsByClassName('back-to-top')[0].addEventListener('click', function () {
+	window.scrollTo({
+		top: 0,
+		behavior: 'smooth'
+	});
+})
+
+
+/* Premium Code Stripped by Freemius */

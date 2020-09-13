@@ -75,7 +75,7 @@ if ( ! function_exists( 'estera_entry_footer' ) ) :
 				$categories_list = get_the_category_list( esc_html__( ', ', 'estera' ) );
 				if ( $categories_list ) {
 					/* translators: 1: list of categories. */
-					printf( '<span class="cat-links">' . esc_html__( '%s', 'estera' ) . '</span>', $categories_list ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+					printf( '<span class="cat-links">' . esc_html__( '%1$s', 'estera' ) . '</span>', $categories_list ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 				}
 			
 			}
@@ -142,7 +142,7 @@ if ( ! function_exists( 'estera_post_thumbnail' ) ) :
 	 * Wraps the post thumbnail in an anchor element on index views, or a div
 	 * element when on single views.
 	 */
-	function estera_post_thumbnail() {
+	function estera_post_thumbnail( $size='' ) {
 		if ( post_password_required() || is_attachment() || ! has_post_thumbnail() ) {
 			return;
 		}
@@ -151,7 +151,7 @@ if ( ! function_exists( 'estera_post_thumbnail' ) ) :
 			?>
 
 			<div class="post-thumbnail">
-				<?php the_post_thumbnail(); ?>
+				<?php the_post_thumbnail( $size ); ?>
 			</div><!-- .post-thumbnail -->
 
 		<?php else : ?>
@@ -159,7 +159,7 @@ if ( ! function_exists( 'estera_post_thumbnail' ) ) :
 			<a class="post-thumbnail" href="<?php the_permalink(); ?>" aria-hidden="true" tabindex="-1">
 				<?php
 					the_post_thumbnail(
-						'post-thumbnail',
+						$size,
 						array(
 							'alt' => the_title_attribute(
 								array(

@@ -59,7 +59,7 @@
         color: #939393;
     }
 
-    /* Third level submenu */
+    // Third level submenu
     ul ul li:hover > ul, ul ul li.focus > ul {
         left: 100%;
     }
@@ -83,7 +83,7 @@
     }
 }
 
-/* Small menu. */
+// Small menu
 .menu-toggle,
 .main-navigation.toggled ul {
 	display: block;
@@ -101,7 +101,7 @@
 	}
 }
 
-/* Toggle menu icon */
+// Toggle menu icon
 
 #nav-icon1 {
     width: 60px;

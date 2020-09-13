@@ -97,7 +97,7 @@ function estera_page_sections_pro( $wp_customize ) {
 				'title'    => esc_html__( 'Pro Available', 'estera' ),
                 'priority' => 5, 
 				'pro_text' => esc_html__( 'Upgrade to PRO', 'estera' ),
-				'pro_url'  => esc_url( 'https://nasiothemes.com/downloads/estera-pro/' ),
+				'pro_url'  => esc_url( 'https://nasiothemes.com/themes/estera/' ),
 			)
 		)
 	);

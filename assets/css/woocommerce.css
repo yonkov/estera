@@ -1910,7 +1910,6 @@
   margin: 0.5em 0 0;
   display: block;
 }
-
 /* Woocommerce layout css file */
 .woocommerce .woocommerce-error .button, .woocommerce .woocommerce-info .button, .woocommerce .woocommerce-message .button, .woocommerce-page .woocommerce-error .button, .woocommerce-page .woocommerce-info .button, .woocommerce-page .woocommerce-message .button {
   float: right;
@@ -2255,7 +2254,6 @@
   left: 10px;
   top: -5px;
 }
-/* Gutenberg Custom css styles */
 .wp-block-button.wc-block-grid__product-add-to-cart {
   position: absolute;
   top: 0;
@@ -2333,9 +2331,6 @@
   padding: 0.3rem 0.35rem;
   border: 1px solid;
 }
-/**
- * Shop tables
- */
 table.shop_table_responsive thead {
   display: none;
 }
@@ -2381,9 +2376,6 @@ table.shop_table_responsive tr td.download-actions .button {
     display: none;
   }
 }
-/**
- * Products
- */
 ul.products {
   margin: 2rem 0 0;
   padding: 0;
@@ -2434,12 +2426,6 @@ ul.products li.product .button {
     width: 13.4933333333%;
   }
 }
-/**
- * General WooCommerce components
- */
-/**
- * Header cart
- */
 .site-header-cart {
   position: relative;
   margin: 0;
@@ -2455,9 +2441,6 @@ ul.products li.product .button {
   margin: 0;
   padding: 0;
 }
-/**
- * Star rating
- */
 .star-rating {
   overflow: hidden;
   position: relative;
@@ -2540,9 +2523,6 @@ p.stars.selected a:not(.active)::before {
   color: #101010;
   opacity: 1;
 }
-/**
- * Tabs
- */
 .woocommerce-tabs ul.tabs {
   list-style: none;
   margin: 0;
@@ -2559,9 +2539,6 @@ p.stars.selected a:not(.active)::before {
 .woocommerce-tabs .panel h2:first-of-type {
   margin-bottom: 1em;
 }
-/**
- * Password strength meter
- */
 .woocommerce-password-strength {
   text-align: right;
 }
@@ -2577,9 +2554,6 @@ p.stars.selected a:not(.active)::before {
 .woocommerce-password-strength.good {
   color: #3d9cd2;
 }
-/**
- * Forms
- */
 .form-row.woocommerce-validated input.input-text {
   box-shadow: inset 2px 0 0 #0f834d;
 }
@@ -2600,9 +2574,6 @@ p.stars.selected a:not(.active)::before {
   z-index: 9999;
 }
 @media screen and (min-width: 48em) {
-  /**
-   * Header cart
-   */
   .site-header-cart .widget_shopping_cart {
     position: absolute;
     top: 100%;
@@ -2617,7 +2588,6 @@ p.stars.selected a:not(.active)::before {
     display: block;
   }
 }
-/* Rating */
 p.stars.selected a.active::before, p.stars.selected a:not(.active)::before {
   content: "\53";
   color: #ffb001 !important;
@@ -2627,11 +2597,9 @@ p.stars:hover a::before {
   color: #ffb001 !important;
   opacity: 0.4;
 }
-/* Wishlist */
 .yith-wcwl-add-button {
   display: flex;
 }
-/* Icon */
 .fa-heart-o::before {
   content: "\e030";
   font-family: ElegantIcons;
@@ -2663,20 +2631,15 @@ p.stars:hover a::before {
 .dark-mode .yith-wcwl-add-button:hover span, .dark-mode .yith-wcwl-add-button:hover i {
   color: #fff;
 }
-/* Cart added dark mode */
 .dark-mode .added_to_cart.wc-forward {
   color: #fff;
 }
-/* Wishlist popup Fix */
 .dark-mode #yith-wcwl-message {
   color: #000;
 }
 .dark-mode.woocommerce p.stars a::before {
   color: #fff;
 }
-/**
- * WooCommerce widgets
- */
 /**
  * WooCommerce Price Filter
  */
@@ -2780,9 +2743,6 @@ p.stars:hover a::before {
   background: transparent;
   color: #6d6d6d;
 }
-/**
- * Single product
- */
 .single-product div.product {
   position: relative;
 }
@@ -2867,7 +2827,6 @@ p.stars:hover a::before {
 .stock.out-of-stock {
   color: #e2401c;
 }
-/* Product meta */
 .woocommerce div.product div.product_meta > span span, .woocommerce div.product div.product_meta > span a {
   color: #6d6d6d;
   font-size: 14px;
@@ -2888,7 +2847,6 @@ p.stars:hover a::before {
   color: #000;
   border: 1px solid #000;
 }
-/* Additional tabs */
 .q_tabs .tabs-nav li.active a, .q_tabs .tabs-nav li a:hover {
   color: #000;
   background-color: #fff;
@@ -2947,7 +2905,6 @@ p.stars:hover a::before {
 .summary .yith-wcwl-add-button {
   margin-bottom: 1em;
 }
-/* Related products wishlist fix */
 .related.products .yith-wcwl-add-button:hover span {
   color: #fff;
 }
@@ -2963,9 +2920,6 @@ p.stars:hover a::before {
 .dark-mode .summary .yith-wcwl-add-button:hover span, .dark-mode .summary .yith-wcwl-add-button:hover i {
   color: #fff;
 }
-/**
- * Checkout
- */
 @media screen and (min-width: 768px) {
   .col2-set .form-row-first {
     float: left;
@@ -2996,7 +2950,6 @@ p.stars:hover a::before {
     font-weight: 400;
   }
 }
-/* Woocommerce account page */
 .woocommerce-MyAccount-navigation ul {
   list-style: none;
   padding: 0;
@@ -3016,7 +2969,6 @@ p.stars:hover a::before {
   z-index: 10;
   background-color: #ff499a;
 }
-/* Fixed navigation */
 .topcorner {
   position: fixed;
   top: 35%;
@@ -3055,4 +3007,3 @@ p.stars:hover a::before {
   background-color: transparent;
   border: 1px solid #d3d3d3;
 }
-/* Home Page */

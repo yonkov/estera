@@ -1,3 +1,4 @@
+@import "shop/home";
 /*
  * Theme Name: Estera
  * WooCommerce rtl styles override
@@ -1910,7 +1911,6 @@
   margin: 0.5em 0 0;
   display: block;
 }
-
 /* Woocommerce layout css file */
 .woocommerce .woocommerce-error .button, .woocommerce .woocommerce-info .button, .woocommerce .woocommerce-message .button, .woocommerce-page .woocommerce-error .button, .woocommerce-page .woocommerce-info .button, .woocommerce-page .woocommerce-message .button {
   float: right;
@@ -2255,7 +2255,6 @@
   left: 10px;
   top: -5px;
 }
-/* Gutenberg Custom css styles */
 .wp-block-button.wc-block-grid__product-add-to-cart {
   position: absolute;
   top: 0;
@@ -2333,9 +2332,6 @@
   padding: 0.3rem 0.35rem;
   border: 1px solid;
 }
-/**
- * Shop tables
- */
 table.shop_table_responsive thead {
   display: none;
 }
@@ -2381,9 +2377,6 @@ table.shop_table_responsive tr td.download-actions .button {
     display: none;
   }
 }
-/**
- * Products
- */
 ul.products {
   margin: 2rem 0 0;
   padding: 0;
@@ -2434,9 +2427,6 @@ ul.products li.product .button {
     width: 13.4933333333%;
   }
 }
-/**
- * Single product
- */
 .single-product div.product {
   position: relative;
 }
@@ -2521,7 +2511,6 @@ ul.products li.product .button {
 .stock.out-of-stock {
   color: #e2401c;
 }
-/* Product meta */
 .woocommerce div.product div.product_meta > span span, .woocommerce div.product div.product_meta > span a {
   color: #6d6d6d;
   font-size: 14px;
@@ -2542,7 +2531,6 @@ ul.products li.product .button {
   color: #000;
   border: 1px solid #000;
 }
-/* Additional tabs */
 .q_tabs .tabs-nav li.active a, .q_tabs .tabs-nav li a:hover {
   color: #000;
   background-color: #fff;
@@ -2601,7 +2589,6 @@ ul.products li.product .button {
 .summary .yith-wcwl-add-button {
   margin-bottom: 1em;
 }
-/* Related products wishlist fix */
 .related.products .yith-wcwl-add-button:hover span {
   color: #fff;
 }
@@ -2617,9 +2604,6 @@ ul.products li.product .button {
 .dark-mode .summary .yith-wcwl-add-button:hover span, .dark-mode .summary .yith-wcwl-add-button:hover i {
   color: #fff;
 }
-/**
- * Checkout
- */
 @media screen and (min-width: 768px) {
   .col2-set .form-row-first {
     float: left;
@@ -2633,12 +2617,6 @@ ul.products li.product .button {
     width: 48.1%;
   }
 }
-/**
- * General WooCommerce components
- */
-/**
- * Header cart
- */
 .site-header-cart {
   position: relative;
   margin: 0;
@@ -2654,9 +2632,6 @@ ul.products li.product .button {
   margin: 0;
   padding: 0;
 }
-/**
- * Star rating
- */
 .star-rating {
   overflow: hidden;
   position: relative;
@@ -2739,9 +2714,6 @@ p.stars.selected a:not(.active)::before {
   color: #101010;
   opacity: 1;
 }
-/**
- * Tabs
- */
 .woocommerce-tabs ul.tabs {
   list-style: none;
   margin: 0;
@@ -2758,9 +2730,6 @@ p.stars.selected a:not(.active)::before {
 .woocommerce-tabs .panel h2:first-of-type {
   margin-bottom: 1em;
 }
-/**
- * Password strength meter
- */
 .woocommerce-password-strength {
   text-align: right;
 }
@@ -2776,9 +2745,6 @@ p.stars.selected a:not(.active)::before {
 .woocommerce-password-strength.good {
   color: #3d9cd2;
 }
-/**
- * Forms
- */
 .form-row.woocommerce-validated input.input-text {
   box-shadow: inset 2px 0 0 #0f834d;
 }
@@ -2799,9 +2765,6 @@ p.stars.selected a:not(.active)::before {
   z-index: 9999;
 }
 @media screen and (min-width: 48em) {
-  /**
-   * Header cart
-   */
   .site-header-cart .widget_shopping_cart {
     position: absolute;
     top: 100%;
@@ -2816,7 +2779,6 @@ p.stars.selected a:not(.active)::before {
     display: block;
   }
 }
-/* Rating */
 p.stars.selected a.active::before, p.stars.selected a:not(.active)::before {
   content: "\53";
   color: #ffb001 !important;
@@ -2826,11 +2788,9 @@ p.stars:hover a::before {
   color: #ffb001 !important;
   opacity: 0.4;
 }
-/* Wishlist */
 .yith-wcwl-add-button {
   display: flex;
 }
-/* Icon */
 .fa-heart-o::before {
   content: "\e030";
   font-family: ElegantIcons;
@@ -2862,20 +2822,15 @@ p.stars:hover a::before {
 .dark-mode .yith-wcwl-add-button:hover span, .dark-mode .yith-wcwl-add-button:hover i {
   color: #fff;
 }
-/* Cart added dark mode */
 .dark-mode .added_to_cart.wc-forward {
   color: #fff;
 }
-/* Wishlist popup Fix */
 .dark-mode #yith-wcwl-message {
   color: #000;
 }
 .dark-mode.woocommerce p.stars a::before {
   color: #fff;
 }
-/**
- * WooCommerce widgets
- */
 /**
  * WooCommerce Price Filter
  */
@@ -2996,8 +2951,6 @@ p.stars:hover a::before {
     font-weight: 400;
   }
 }
-/* Home Page */
-/* RTL Woocommerce Styles */
 .woocommerce ul.cart_list li img, .woocommerce ul.product_list_widget li img {
   float: right;
   margin-left: 1em;
@@ -3035,8 +2988,6 @@ p.stars:hover a::before {
   padding: 1em;
   margin: 0;
 }
-/* Single */
-/* Sinlge poduct page fix */
 .woocommerce.single span.onsale {
   left: auto;
   right: -0.5em;
@@ -3047,18 +2998,15 @@ p.stars:hover a::before {
 .woocommerce #content div.product div.images, .woocommerce div.product div.images, .woocommerce-page #content div.product div.images, .woocommerce-page div.product div.images {
   float: right;
 }
-/* Search gallery */
 .woocommerce div.product div.images .woocommerce-product-gallery__trigger {
   position: absolute;
   top: 0.5em;
   right: auto;
   left: 0.5em;
 }
-/* Rating on single product page */
 .woocommerce .woocommerce-product-rating .star-rating {
   float: none;
 }
-/* Cart */
 @media (max-width: 767px) {
   .product-thumbnail img {
     float: right;
@@ -3078,11 +3026,9 @@ table.shop_table_responsive tr td {
     margin-right: 0;
   }
 }
-/* Additional fields */
 .woocommerce table.shop_attributes {
   text-align: right;
 }
-/* Menu icons */
 .cart-counter {
   right: auto;
   left: 2px;
@@ -3107,7 +3053,6 @@ table.shop_table_responsive tr td {
 .widget .woocommerce-product-search input[type="search"] {
   float: right;
 }
-/* Fixed menu scss */
 .topcorner {
   float: left;
   position: fixed;
@@ -3140,7 +3085,6 @@ table.shop_table_responsive tr td {
   border-radius: 3px;
   background-color: #fff;
 }
-/* GUTENBERG BLOCKS */
 .wp-block-button.wc-block-grid__product-add-to-cart {
   right: auto;
   left: 0;
@@ -3149,7 +3093,6 @@ table.shop_table_responsive tr td {
   right: 5px;
   left: auto;
 }
-/* Wishlist */
 .home .wishlist-widget-icon-wrapper {
   left: 10px;
   right: auto;
@@ -3166,7 +3109,9 @@ table.shop_table_responsive tr td {
   right: 5px;
   left: auto;
 }
-/* Demo content */
+.yith-wcwl-icon {
+  padding-left: 5px;
+}
 .button.product_type_simple.add_to_cart_button.ajax_add_to_cart.added::after {
   font-family: WooCommerce;
   content: "\e017";

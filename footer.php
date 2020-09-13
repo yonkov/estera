@@ -9,12 +9,13 @@
  * @package Estera
  */
 
-     /**
-     * Footer
-     * 
-     * @hooked estera_back_to_top
-    */
-    do_action( 'estera_footer' );
+/**
+ * Footer
+ *
+ * @hooked estera_back_to_top
+ */
+
+do_action( 'estera_footer' );
 
 ?>
 
@@ -27,7 +28,7 @@
 		<?php else :
 			esc_html_e('Designed by', 'estera'); ?>
 			<a href="<?php echo esc_url( 'https://nasiothemes.com/' ); ?>" class="imprint">
-            	<?php esc_html_e ( 'Nasio Themes', 'estera' ); ?>
+				<?php esc_html_e ( 'Nasio Themes', 'estera' ); ?>
         	</a>
 			<span class="sep"> || </span>
 				<?php

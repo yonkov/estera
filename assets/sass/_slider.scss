@@ -3,6 +3,10 @@
 }
 
 .header-slider-wrapper {
+	//IE 11 fix
+	.image-overlay {
+		display: flex;
+	}
 
 	.text-wrapper {
 		@media (min-width:60em){
@@ -56,7 +60,7 @@
 	color: #fff;
 	top: 35%;
 }
-/* Header Slider arrows */
+// Header Slider arrows
 .header-slider-wrapper {
 	.swiper-button-next, .swiper-button-prev {
 		top:50%;
@@ -75,7 +79,7 @@
     background: #fff;
 }
 
-/*---------- SLIDER ANIMATION ----------*/
+//SLIDER ANIMATION
 
 @-webkit-keyframes kbrns_zoomInOut {
     0% {

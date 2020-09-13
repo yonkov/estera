@@ -1,4 +1,4 @@
-/* Support full width block layout when there is full width page layout */
+// Support full width block layout when there is full width page layout
 
 .estera-full-width .alignfull {
 	margin: 0 calc(50% - 50vw);
@@ -6,16 +6,16 @@
 	width: 100vw;
 }
 
-/* Latest Posts Block */
+// Latest Posts Block
 
 .wp-block-latest-posts li a {
     padding: 1em 2em 0 0;
     display: inline-block;
 }
 
-/* Tags Block */
+// Tags Block
 
-/* Tags Widget */
+// Tags Widget
 .wp-block-tag-cloud a {
     margin: 0 3px 5px 0;
 }
@@ -41,7 +41,7 @@
     background-color: #9d9d9d;
 }
 
-/* Categories widget */
+// Categories widget
 
 .wp-block-categories.wp-block-categories-list {
     &.center-gb-categories {
@@ -56,11 +56,10 @@
     }
 }
 
-/* Blockquote */
+//Blockquote
 
 .wp-block-pullquote {
-    border-top: 3px solid;
-    border-bottom: 3px solid;
+    box-shadow: 4px 1px 6px rgba(0, 0, 0, 0.3);
 }
 
 .wp-block-pullquote blockquote {
@@ -68,7 +67,7 @@
     margin: 0;
 }
 
-/* Dark mode */
+// Dark mode
 
 .dark-mode .wp-block-latest-posts li a {
     color: #fff;
@@ -76,4 +75,19 @@
 
 .dark-mode a:visited {
     color: #fff;
+}
+
+.dark-mode .wp-block-pullquote {
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+}
+
+// Get wid block
+
+.dark-mode .wp-block-getwid-section__background.has-background {
+    background-color: transparent !important;
+}
+
+.dark-mode .wp-block-getwid-section__inner-content {
+	background-color: transparent;
 }

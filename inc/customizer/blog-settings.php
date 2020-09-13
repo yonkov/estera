@@ -2,9 +2,9 @@
 
 /**
  * Register Blog Settings Section in the theme customizer.
- * 
+ *
  * @package Estera
- * 
+ *
  */
 function estera_register_blog_theme_customizer( $wp_customize )
 {
@@ -72,7 +72,7 @@ function estera_register_blog_theme_customizer( $wp_customize )
     ) );
     $wp_customize->add_control( 'post_archives_content', array(
         'label'       => esc_html__( 'Blog Excerpts', 'estera' ),
-        'description' => esc_html__( 'Show post excerpts instead of full content for your blog summaries', 'estera' ),
+        'description' => esc_html__( 'Show post excerpts instead of full content for your post archives', 'estera' ),
         'section'     => 'blog_options',
         'type'        => 'checkbox',
     ) );

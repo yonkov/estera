@@ -1,6 +1,4 @@
-/**
- * Header cart
- */
+//  Header cart
 .site-header-cart {
 	position: relative;
 	margin: 0;
@@ -20,9 +18,8 @@
 	}
 }
 
-/**
- * Star rating
- */
+// Star rating
+
 .star-rating {
 	overflow: hidden;
 	position: relative;
@@ -138,9 +135,8 @@ p.stars {
 	}
 }
 
-/**
- * Tabs
- */
+// Tabs
+
 .woocommerce-tabs {
 
 	ul.tabs {
@@ -167,9 +163,8 @@ p.stars {
 	}
 }
 
-/**
- * Password strength meter
- */
+// Password strength meter
+
 .woocommerce-password-strength {
 	text-align: right;
 
@@ -190,9 +185,7 @@ p.stars {
 	}
 }
 
-/**
- * Forms
- */
+// Forms
 .form-row {
 
 	&.woocommerce-validated {
@@ -227,9 +220,7 @@ p.stars {
 
 @media screen and (min-width: 48em) {
 
-	/**
-	 * Header cart
-	 */
+	// Header cart
 	.site-header-cart {
 
 		.widget_shopping_cart {
@@ -254,7 +245,7 @@ p.stars {
 }
 
 
-/* Rating */
+// Rating
 
 p.stars.selected a.active::before, 
 p.stars.selected a:not(.active)::before {
@@ -268,12 +259,12 @@ p.stars:hover a::before {
     opacity: .4;
 }
 
-/* Wishlist */
+// Wishlist
 .yith-wcwl-add-button {
     display: flex;
 }
 
-/* Icon */
+// Icon
 
 .fa-heart-o::before {
     content: "\e030";
@@ -316,13 +307,13 @@ p.stars:hover a::before {
 }
 
 
-/* Cart added dark mode */
+// Cart added dark mode
 
 .dark-mode .added_to_cart.wc-forward {
     color: $color__white;
 }
 
-/* Wishlist popup Fix */
+// Wishlist popup Fix
 
 .dark-mode #yith-wcwl-message {
     color: $color__black;
