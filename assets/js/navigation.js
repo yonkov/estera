@@ -120,10 +120,10 @@
 // When the user scrolls down 100px from the top of the document, show the woocommerce fixed menu icons
 
 window.onscroll = function () {
-	scrollFunction();
+	esteraScrollFunction();
 };
 
-function scrollFunction() {
+function esteraScrollFunction() {
 	if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
 		if (document.getElementById("scroll-btn")) {
 			document.getElementById("scroll-btn").style.display = "block";
@@ -151,6 +151,3 @@ document.getElementsByClassName('back-to-top')[0].addEventListener('click', func
 		behavior: 'smooth'
 	});
 })
-
-
-/* Premium Code Stripped by Freemius */

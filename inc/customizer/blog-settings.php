@@ -90,7 +90,7 @@ function estera_register_blog_theme_customizer( $wp_customize )
         'max'  => 55,
         'step' => 1,
     ),
-        'description'     => 'Enter a number between 10 and 55. Default is 55.',
+        'description' => esc_html__('Enter a number between 10 and 55. Default is 55.', 'estera'),
         'active_callback' => 'estera_is_excerpt',
     ) );
 }

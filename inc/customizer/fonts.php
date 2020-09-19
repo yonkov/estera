@@ -6,8 +6,7 @@
  * @package Estera
  *
  */
-function estera_register_fonts_theme_customizer( $wp_customize )
-{
+function estera_register_fonts_theme_customizer( $wp_customize ) {
     $wp_customize->add_section( 'font_section', array(
         'title'       => __( 'Fonts', 'estera' ),
         'description' => __( '700+ google fonts - Go Pro version.', 'estera' ),
@@ -21,7 +20,7 @@ function estera_register_fonts_theme_customizer( $wp_customize )
         'section'     => 'font_section',
         'type'        => 'select',
         'choices'     => estera_font_family(),
-        'description' => 'Choose font for the headlines.',
+        'description' => __('Choose font for the headlines.', 'estera'),
     ) );
     $wp_customize->add_setting( 'body_fontfamily', array(
         'default'           => 'Open Sans',
@@ -32,7 +31,7 @@ function estera_register_fonts_theme_customizer( $wp_customize )
         'section'     => 'font_section',
         'type'        => 'select',
         'choices'     => estera_font_family(),
-        'description' => 'Choose font for the text.',
+        'description' => __('Choose font for the text.', 'estera'),
     ) );
     /* Regulate body size */
     $wp_customize->add_setting( 'body_font_size', array(
@@ -48,13 +47,12 @@ function estera_register_fonts_theme_customizer( $wp_customize )
         'max'  => 30,
         'step' => 1,
     ),
-        'description' => 'Change the size of the text. Enter a number in pixels between 8 and 30. Default is 16.',
+        'description' => __('Change the size of the text. Enter a number in pixels between 8 and 30. Default is 16.', 'estera'),
     ) );
 }
 
 add_action( 'customize_register', 'estera_register_fonts_theme_customizer' );
-function estera_font_family()
-{
+function estera_font_family() {
     $google_fonts = array(
         "Times New Roman" => "Times New Roman, Sans Serif",
         "Open Sans"       => "Open Sans",
@@ -81,8 +79,7 @@ function estera_font_family()
  * Combine headings and body custom fonts in one http request.
  * @link https://wordpress.org/themes/new-york-business/
  */
-function estera_fonts_url()
-{
+function estera_fonts_url() {
     $fonts_url = '';
     /*
      * Translators: If there are characters in your language that are not
@@ -109,8 +106,7 @@ function estera_fonts_url()
 /**
  * Display custom font CSS.
  */
-function estera_business_fonts_css_container()
-{
+function estera_business_fonts_css_container() {
     ?>
 <style type="text/css">
 h1,
@@ -119,18 +115,12 @@ h3,
 h4,
 h5,
 h6 {
-    font-family:                                                                 <?php 
-    echo  esc_attr( get_theme_mod( 'headings_fontfamily', 'Lato' ) ) ;
-    ?>;
+    font-family: <?php echo esc_attr( get_theme_mod( 'headings_fontfamily', 'Lato' ) ) ;?>;
 }
 
 body {
-    font-family:                                                                 <?php 
-    echo  esc_attr( get_theme_mod( 'body_fontfamily', 'Open Sans' ) ) ;
-    ?>;
-    font-size:                                                         <?php 
-    echo  esc_attr( get_theme_mod( 'body_font_size', '16' ) ) ;
-    ?>px;
+    font-family: <?php echo esc_attr(get_theme_mod('body_fontfamily', 'Open Sans'));?>;
+    font-size: <?php echo esc_attr(get_theme_mod('body_font_size', '16'));?>px;
 }
 </style>
 <?php 

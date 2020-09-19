@@ -994,7 +994,6 @@ textarea {
   }
 }
 .widget #searchform input[type="search"] {
-  outline: 0;
   background-color: transparent;
   font-family: inherit;
   width: 82%;

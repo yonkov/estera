@@ -33,7 +33,10 @@ do_action( 'estera_footer' );
 			<span class="sep"> || </span>
 				<?php
 				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Powered by %s', 'estera' ), '<a href="https://wordpress.org/">WordPress</a>' ); ?>
+				esc_html_e('Powered by', 'estera'); ?>
+				<a href="<?php echo esc_url( 'https://wordpress.com/' ); ?>" class="imprint">
+					<?php esc_html_e ( 'WordPress', 'estera' ); ?>
+				</a>
 		<?php endif ?>
 		<?php 
 		$isDarkMode = get_theme_mod('enable_dark_mode', 1);

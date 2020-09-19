@@ -2721,7 +2721,6 @@ p.stars:hover a::before {
   border: 1px solid #e3e3e3;
 }
 .widget .woocommerce-product-search input[type="search"] {
-  outline: 0;
   color: #8d8d8d;
   background-color: transparent;
   font-family: inherit;
