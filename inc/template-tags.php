@@ -24,7 +24,7 @@ if ( ! function_exists( 'estera_posted_on' ) ) :
 			);
 	
 			$posted_on = sprintf(
-				esc_html_x( '%s', 'post date', 'estera' ),
+				esc_html( '%s', 'post date'),
 				'<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $time_string . '</a>'
 			);
 	
@@ -45,8 +45,7 @@ if ( ! function_exists( 'estera_posted_by' ) ) :
 		if($show_post_author){
 
 			$byline = sprintf(
-				/* translators: %s: post author. */
-				esc_html_x( '%s', 'post author', 'estera' ),
+				esc_html( '%s', 'post author' ),
 				'<span class="author vcard"><a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . esc_html( get_the_author() ) . '</a></span>'
 			);
 	
@@ -71,22 +70,23 @@ if ( ! function_exists( 'estera_entry_footer' ) ) :
 			$display_comments = get_theme_mod( 'show_post_comments', 1 );
 
 			if($display_category_list) {
-				
-				$categories_list = get_the_category_list( esc_html__( ', ', 'estera' ) );
-				if ( $categories_list ) {
-					/* translators: 1: list of categories. */
-					printf( '<span class="cat-links">' . esc_html__( '%1$s', 'estera' ) . '</span>', $categories_list ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
-				}
+
+				$category_list = get_the_category_list(esc_html(', '));?>
+				<?php if ($category_list): ?>
+				<span class="cat-links">
+					<?php printf( /* category list */esc_html('%s'), $category_list); // xss ok. ?>
+				</span>
+					<?php endif;
 			
 			}
 
 			if($display_tag_list) {
 
 				/* translators: used between list items, there is a space after the comma */
-				$tags_list = get_the_tag_list( '', esc_html_x( ', ', 'list item separator', 'estera' ) );
+				$tags_list = get_the_tag_list('', esc_html(', '));
 				if ( $tags_list ) {
 				/* translators: 1: list of tags. */
-				printf( '<span class="tags-links">' . esc_html__( '%1$s', 'estera' ) . '</span>', $tags_list ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+					printf( '<span class="tags-links">' . esc_html( '%s') . '</span>', $tags_list ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 				}
 			
 			}
