@@ -11,8 +11,9 @@
 
 if (!defined('ESTERA_VERSION')) {
     // Replace the version number of the theme on each release.
-    define('ESTERA_VERSION', '0.4');
+    define('ESTERA_VERSION', '0.5');
 }
+
 if (!function_exists('estera_setup')) {
     /**
      * Sets up theme defaults and registers support for various WordPress features.

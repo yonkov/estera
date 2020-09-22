@@ -47,7 +47,7 @@ function estera_woocommerce_scripts() {
 	/* RTL css */
 	wp_style_add_data('estera-woocommerce-style', 'rtl', 'replace');
 	
-	$font_path   = WC()->plugin_url() . '/assets/fonts/';
+	$font_path   = esc_url(WC()->plugin_url()) . '/assets/fonts/';
 	$inline_font = '@font-face {
 			font-family: "star";
 			src: url("' . $font_path . 'star.eot");

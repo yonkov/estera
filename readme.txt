@@ -4,13 +4,13 @@ Tags: e-commerce, portfolio, blog, wide-blocks, one-column, two-columns, right-s
 Requires at least: 4.7
 Requires PHP: 5.6
 Tested up to: 5.5
-Stable tag: 0.4
+Stable tag: 0.5
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
 == Description ==
 
-Estera is a lightweight, SEO friendly WordPress theme, optimized for creating blazing fast WooCommerce online stores and portfolio websites. This multi-purpose theme is very intuitive to use and provides an exhaustive documentation and plenty of options in the theme customizer, which makes it accessible and easy to use even to people with little or no coding experience at all. The theme is built with the Gutenberg editor in mind but it also integrates well with the good old Classic editor. The theme features a beautiful header slider, powered by posts or products. Plenty of options to customize the slider to taste. Option to pick between right sidebar, left sidebar or full-width layout. The visitors can choose between light and dark (night) theme mode and change their preferences with a single click. The theme features a beautiful typography and an option to choose between different types of fonts. Option to add or remove post meta information. The theme is optimized for speed and scores remarkably high on Google Page Speed Insights. This versatile theme works smoothly with the most popular WordPress plugins, so you can easily and quickly create a high-conversion e-commerce or portfolio website in just a few minutes. The theme is highly extensible and developer-friendly. It follows the Theme Hook Alliance best coding practicies to ensure smooth integration and best results. Theme homepage: https://nasiothemes.com/themes/estera/
+Estera is a lightweight, SEO friendly WordPress theme, optimized for creating blazing fast WooCommerce online stores, portfolio websites or blogs. This multi-purpose theme is very intuitive to use and provides an exhaustive documentation and plenty of options in the theme customizer, which makes it accessible and easy to use even to people with little or no coding experience at all. The theme is built with the Gutenberg editor in mind but it also integrates well with the good old Classic editor. The theme features a beautiful header slider, powered by posts or products. Plenty of options to customize the slider to taste. Option to pick between right sidebar, left sidebar or full-width layout. The visitors can choose between light and dark (night) theme mode and change their preferences with a single click. The theme features a beautiful typography and an option to choose between different types of fonts. Option to add or remove post meta information. The theme is optimized for speed and scores remarkably high on Google Page Speed Insights. This versatile theme works smoothly with the most popular WordPress plugins, so you can easily and quickly create a high-conversion e-commerce or portfolio website in just a few minutes. The theme is highly extensible and developer-friendly. It follows the Theme Hook Alliance best coding practicies to ensure smooth integration and best results. Theme homepage: https://nasiothemes.com/themes/estera/
 
 == Installation ==
 
@@ -19,6 +19,9 @@ Estera is a lightweight, SEO friendly WordPress theme, optimized for creating bl
 3. Click Activate to use your new theme right away.
 
 == Changelog ==
+
+= 0.5 - September 2020 =
+* Escape woocommerce font url
 
 = 0.4 - September 2020 =
 * Make sure customizer description is translatable. Fix search outline. Make sure footer is translatable. Fix navigation js namespacing. Fix theme sniffer and test php 5.6 compatibility.
