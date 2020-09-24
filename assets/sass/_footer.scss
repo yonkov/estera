@@ -8,15 +8,13 @@
     }
 }
 
-
 // Dark Mode Switcher
 
 .wpnm-button {
-    background-color: transparent !important
-  }
-  .wpnm-button {
-    font-size: 16px
-  }
+  background-color: transparent !important;
+  border: none;
+  font-size: 16px
+}
   
   .wpnm-button-inner-left:before,
   .wpnm-button-inner-left:after {

@@ -27,14 +27,14 @@ do_action( 'estera_footer' );
 		
 		<?php else :
 			esc_html_e('Designed by', 'estera'); ?>
-			<a href="<?php echo esc_url( 'https://nasiothemes.com/' ); ?>" class="imprint">
+			<a href="<?php echo esc_url( __('https://nasiothemes.com/', 'estera' ) ); ?>" class="imprint">
 				<?php esc_html_e ( 'Nasio Themes', 'estera' ); ?>
         	</a>
 			<span class="sep"> || </span>
 				<?php
 				/* translators: %s: CMS name, i.e. WordPress. */
 				esc_html_e('Powered by', 'estera'); ?>
-				<a href="<?php echo esc_url( 'https://wordpress.com/' ); ?>" class="imprint">
+				<a href="<?php echo esc_url( __('https://wordpress.com/', 'estera' ) ); ?>" class="imprint">
 					<?php esc_html_e ( 'WordPress', 'estera' ); ?>
 				</a>
 		<?php endif ?>
