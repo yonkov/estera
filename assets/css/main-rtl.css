@@ -308,35 +308,37 @@
 
  .header-slider-wrapper .swiper-button-next,.header-slider-wrapper .swiper-button-prev { top:50%; color:#fff; }
 
+ .swiper-slide-active { z-index:99; }
+
  .testimonials-container .swiper-button-next,.testimonials-container .swiper-button-prev { top:50%; color:#868e96; }
 
  .swiper-pagination-bullet-active { background:#fff; }
 
- @-webkit-keyframes kbrns_zoomInOut { 0% { -webkit-transform:scale(1); }
+ @-webkit-keyframes estera_zoomInOut { 0% { -webkit-transform:scale(1); }
 
  100% { -webkit-transform:scale(1.15); }
 
  }
 
- @-moz-keyframes kbrns_zoomInOut { 0% { -moz-transform:scale(1); }
+ @-moz-keyframes estera_zoomInOut { 0% { -moz-transform:scale(1); }
 
  100% { -moz-transform:scale(1.15); }
 
  }
 
- @-ms-keyframes kbrns_zoomInOut { 0% { -ms-transform:scale(1); }
+ @-ms-keyframes estera_zoomInOut { 0% { -ms-transform:scale(1); }
 
  100% { -ms-transform:scale(1.15); }
 
  }
 
- @-o-keyframes kbrns_zoomInOut { 0% { -o-transform:scale(1); }
+ @-o-keyframes estera_zoomInOut { 0% { -o-transform:scale(1); }
 
  100% { -o-transform:scale(1.15); }
 
  }
 
- @keyframes kbrns_zoomInOut { 0% { transform:scale(1); }
+ @keyframes estera_zoomInOut { 0% { transform:scale(1); }
 
  100% { transform:scale(1.15); }
 

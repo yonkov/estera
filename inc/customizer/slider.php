@@ -274,7 +274,7 @@ function estera_customize_swiper_slider()
     if ( $slider_animation ) {
         ?>
     .header-slider-item {
-        animation: kbrns_zoomInOut 15s linear 0s infinite alternate;
+        animation: estera_zoomInOut 15s linear 0s infinite alternate;
     }
     <?php 
     }
@@ -317,7 +317,7 @@ function estera_customize_swiper_slider()
             <?php 
     if ( $slider_animation ) {
         ?>
-            spaceBetween: 120,
+            //spaceBetween: 120,
             <?php 
     }
     ?>
