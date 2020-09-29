@@ -13,7 +13,11 @@
 
 .comments-area .comment-body {
     position: relative;
-    padding-left: 60px;
+    padding-left: 45px;
+}
+
+.comment-list {
+    list-style: none;
 }
 
 .comment-list > .comment:first-child {

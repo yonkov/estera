@@ -182,7 +182,9 @@
 
  .comment-body img.avatar { position:absolute; top:5px; left:-1em; width:50px; height:50px; border-radius:100%; }
 
- .comments-area .comment-body { position:relative; padding-left:60px; }
+ .comments-area .comment-body { position:relative; padding-left:45px; }
+
+ .comment-list { list-style:none; }
 
  .comment-list > .comment:first-child { border-top:none; padding-top:0; margin-top:0; }
 
@@ -226,13 +228,13 @@
 
  .entry-footer span { padding-right:8px; }
 
- a { color:#32373c; color:#101010; }
+ a { color:#1e73be; }
 
- a:visited { color:#101010; }
+ a:visited { color:#1e73be; }
 
- a:hover,a:active { color:#101010; opacity:0.7; }
+ a:hover,a:active { color:#1e73be; opacity:0.7; }
 
- a:focus { color:#101010; }
+ a:focus { color:#1e73be; }
 
  a:hover,a:active { outline:0; }
 
@@ -244,7 +246,7 @@
 
  .page-links { clear:both; margin:0 0 1.5em; }
 
- button,input[type="button"],input[type="reset"],input[type="submit"] { border:1px solid; border-color:#000; border-radius:3px; background:#fff; color:rgba(0, 0, 0, 0.8); font-size:0.75rem; line-height:1; padding:0.6em 1em; }
+ button,input[type="button"],input[type="reset"],input[type="submit"] { border:1px solid; border-color:#000; border-radius:3px; background:#fff; color:rgba(0, 0, 0, 0.8); font-size:0.75rem; line-height:1; padding:0.9em; }
 
  button:hover,input[type="button"]:hover,input[type="reset"]:hover,input[type="submit"]:hover { border-color:#000; background-color:#000; color:#fff; cursor:pointer; }
 
@@ -273,6 +275,8 @@
  #searchform #searchsubmit { border:0; background:transparent; }
 
  #searchform #searchsubmit:hover { background:transparent; color:#6d6d6d; }
+
+ .more-link,.more-link:visited { color:#101010; }
 
  .wrapper { width:100%; max-width:1180px; padding:1em 15px 0; }
 
@@ -406,9 +410,11 @@
 
  #nav-icon1.open span:nth-child(3) { -webkit-transform:rotate(-45deg); -moz-transform:rotate(-45deg); -o-transform:rotate(-45deg); transform:rotate(-45deg); top:39px; left:8px; }
 
- .site-main .comment-navigation,.site-main .posts-navigation,.site-main .post-navigation { margin:0 0 1.5em; }
+ .site-main .comment-navigation,.site-main .posts-navigation,.site-main .post-navigation { margin:1.5em 0; }
 
  .comment-navigation .nav-links,.posts-navigation .nav-links,.post-navigation .nav-links { display:flex; }
+
+ .comment-navigation .nav-links a,.posts-navigation .nav-links a,.post-navigation .nav-links a { color:#101010; }
 
  .comment-navigation .nav-previous,.posts-navigation .nav-previous,.post-navigation .nav-previous { flex:1 0 50%; }
 

@@ -192,11 +192,14 @@
 .post-navigation {
 
 	.site-main & {
-		margin: 0 0 1.5em;
+		margin: 1.5em 0;
 	}
 
 	.nav-links {
-		display: flex;
+        display: flex;
+        a{
+            color: #101010;
+        }
 	}
 
 	.nav-previous {

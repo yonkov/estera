@@ -70,7 +70,6 @@ table {
 }
 
 a {
-	color: rgb(50, 55, 60);
 
 	color: $color__link;
 
@@ -124,7 +123,7 @@ input[type="submit"] {
 	color: $color_button;
 	font-size: 0.75rem;
 	line-height: 1;
-	padding: 0.6em 1em;
+	padding: 0.9em;
 
 	&:hover {
 		border-color: $color__border-button-hover;
@@ -208,4 +207,8 @@ textarea {
         }
     }
 
+}
+
+.more-link, .more-link:visited {
+	color: #101010;
 }
