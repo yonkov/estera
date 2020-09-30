@@ -16,13 +16,14 @@
     }
 
     .custom-logo-link {
-        max-width: 100px;
+        max-width: 120px;
+        padding-right: 1em;
     }
 
     .site-branding {
         @include row-justify-between;
         align-items: center;
-        min-width: 25%;
+        min-width: 26%;
 
         .site-title {
             margin: 0;
@@ -192,7 +193,7 @@
 .post-navigation {
 
 	.site-main & {
-		margin: 1.5em 0;
+		padding: 1.5em 0;
 	}
 
 	.nav-links {

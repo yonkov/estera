@@ -123,7 +123,7 @@
 
  .dark-mode blockquote { background:transparent; }
 
- .main-navigation { display:block; width:100%; }
+ .main-navigation { width:100%; }
 
  .main-navigation ul { display:none; list-style:none; margin:0; padding-left:0; }
 
@@ -379,9 +379,9 @@
 
  }
 
- .main-navigation-container .custom-logo-link { max-width:100px; }
+ .main-navigation-container .custom-logo-link { max-width:120px; padding-right:1em; }
 
- .main-navigation-container .site-branding { display:flex; justify-content:space-between; align-items:center; min-width:25%; }
+ .main-navigation-container .site-branding { display:flex; justify-content:space-between; align-items:center; min-width:26%; }
 
  .main-navigation-container .site-branding .site-title { margin:0; }
 
@@ -431,7 +431,7 @@
 
  #nav-icon1.open span:nth-child(3) { -webkit-transform:rotate(-45deg); -moz-transform:rotate(-45deg); -o-transform:rotate(-45deg); transform:rotate(-45deg); top:39px; left:8px; }
 
- .site-main .comment-navigation,.site-main .posts-navigation,.site-main .post-navigation { margin:1.5em 0; }
+ .site-main .comment-navigation,.site-main .posts-navigation,.site-main .post-navigation { padding:1.5em 0; }
 
  .comment-navigation .nav-links,.posts-navigation .nav-links,.post-navigation .nav-links { display:flex; }
 

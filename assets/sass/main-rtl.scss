@@ -238,6 +238,11 @@ a:active {
    display: block;
 }
 
+.main-navigation-container .custom-logo-link {
+   padding-right: 0em;
+   padding-left: 1em;
+}
+
 @media screen and (min-width: 37.5em) {
 
    .menu-toggle {
@@ -284,14 +289,6 @@ a:active {
 	   }
    }
    
-}
-
-.site-main .comment-navigation,
-.site-main
-.posts-navigation,
-.site-main
-.post-navigation {
-   margin: 0 0 1.5em;
 }
 
 .comment-navigation .nav-links,

@@ -305,3 +305,15 @@ function estera_back_to_top() {
 }
 
 add_action( 'estera_footer', 'estera_back_to_top', 45 );
+
+//Filter Classes of wp_list_pages items to match menu items
+
+function estera_filter_menu_item_classes( $css_class) {
+	// Add menu-item-has-children class.
+	if ( in_array( 'page_item_has_children', $css_class, true ) ) {
+		$css_class[] = 'menu-item-has-children';
+    }
+	return $css_class;
+}
+
+add_filter( 'page_css_class', 'estera_filter_menu_item_classes', 10, 5 );
