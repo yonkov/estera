@@ -4,6 +4,11 @@
     font-size: 18px;
 }
 
+.cart-contents-count .icon_cart_alt::before {
+    position: relative;
+    bottom: 2px;
+}
+
 .cart-counter {
     @extend %menu-icons;
 }
@@ -12,7 +17,6 @@
     @extend %menu-icons;
     right: auto;
     @media(min-width: 982px){
-        left: 14px;
-        top:1.5em;
+        top:1.7em;
     }
 }

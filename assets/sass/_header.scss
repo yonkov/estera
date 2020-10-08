@@ -72,7 +72,7 @@
     }
 
     li {
-        margin: auto 1rem;
+        padding: 0 1rem;
         text-transform: capitalize;
         position: relative;
 
@@ -106,7 +106,7 @@
 
 #nav-icon1 {
     width: 60px;
-    height: 45px;
+    height: 50px;
     position: relative;
     margin: 10px 0 25px;
     -webkit-transform: rotate(0deg);
@@ -170,7 +170,7 @@
     -moz-transform: rotate(45deg);
     -o-transform: rotate(45deg);
     transform: rotate(45deg);
-    top: -3px;
+    top: 0px;
     left: 8px;
   }
   
@@ -184,7 +184,7 @@
     -moz-transform: rotate(-45deg);
     -o-transform: rotate(-45deg);
     transform: rotate(-45deg);
-    top: 39px;
+    top: 42px;
     left: 8px;
   }
 
@@ -198,17 +198,13 @@
 
 	.nav-links {
         display: flex;
+        justify-content: space-between;
         a{
             color: #101010;
         }
 	}
 
-	.nav-previous {
-		flex: 1 0 50%;
-	}
-
 	.nav-next {
 		text-align: end;
-		flex: 1 0 50%;
 	}
 }

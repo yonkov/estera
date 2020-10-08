@@ -1,9 +1,9 @@
  /*
  * Theme Name: Estera
  * WooCommerce styles override
- */ .cart-counter,.wishlist-counter { font-size:9px; position:absolute; right:0; background:#ff499a; display:inline-block; line-height:12px; border-radius:50%; text-align:center; padding:1px 4px; }
+ */ .cart-counter,.wishlist-counter { font-size:9px; position:absolute; left:3em; background:#ff499a; display:inline-block; line-height:12px; border-radius:50%; text-align:center; padding:1px 4px; }
 
- @media (max-width:981px) { .cart-counter,.wishlist-counter { left:2em; right:auto; }
+ @media (max-width:981px) { .cart-counter,.wishlist-counter { left:3em; right:auto; }
 
  }
 
@@ -993,9 +993,11 @@
 
  .cart-contents-count,.icon_heart_alt { font-size:18px; }
 
+ .cart-contents-count .icon_cart_alt::before { position:relative; bottom:2px; }
+
  .wishlist-counter { right:auto; }
 
- @media (min-width:982px) { .wishlist-counter { left:14px; top:1.5em; }
+ @media (min-width:982px) { .wishlist-counter { top:1.7em; }
 
  }
 
@@ -1332,8 +1334,6 @@
  .woocommerce-MyAccount-navigation ul li.is-active a::after { content:""; display:block; width:100%; height:5px; position:relative; bottom:0; left:0; z-index:10; background-color:#ff499a; }
 
  .topcorner { position:fixed; top:35%; right:-3px; display:none; text-align:center; z-index:99999; width:50px; }
-
- .topcorner .cart-counter { right:10px; }
 
  .topcorner .my-cart a { color:#000; margin:0px; padding:0px; }
 

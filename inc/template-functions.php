@@ -256,7 +256,7 @@ function estera_the_posts_navigation() {
     the_posts_navigation( array(
         'prev_text'          => $estera_prev_arrow . __( ' Older posts', 'estera' ),
         'next_text'          => __( 'Newer posts', 'estera' ) . $estera_next_arrow,
-        'screen_reader_text' => __( 'Posts navigation', 'estera' ),
+        'screen_reader_text' => __( 'Posts navigation', 'estera' )
     ) );
 }
 
@@ -266,8 +266,9 @@ function estera_the_post_navigation() {
     $estera_next_arrow = ( is_rtl() ? '&larr;' : '&rarr;' );
     the_post_navigation( array(
         'prev_text' => '<span class="nav-subtitle">' . $estera_prev_arrow . '</span> <span class="nav-title">%title</span>',
-        'next_text' => '<span class="nav-subtitle">' . '</span> <span class="nav-title">%title </span>' . $estera_next_arrow,
-    ) );
+        'next_text' => '<span class="nav-title">%title </span>' . '<span class="nav-subtitle">' . $estera_next_arrow . '</span>',
+        'screen_reader_text' => __( 'Posts navigation', 'estera' )
+        ) );
 }
 
 /**
@@ -317,3 +318,18 @@ function estera_filter_menu_item_classes( $css_class) {
 }
 
 add_filter( 'page_css_class', 'estera_filter_menu_item_classes', 10, 5 );
+
+/**
+ * Enable dark theme mode
+ * Hook js right after the body tag to avoid light flash of unstyled content
+ */
+function estera_dark_mode() {
+    ?>
+        <script>
+            if (localStorage.getItem('esteraNightMode')) {
+                document.body.className +=' dark-mode';
+	        }
+        </script>
+    <?php
+}
+add_action('wp_body_open', 'estera_dark_mode');

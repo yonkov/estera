@@ -1,9 +1,9 @@
  /*
  * Theme Name: Estera
  * WooCommerce rtl styles override
- */ .cart-counter,.wishlist-counter { font-size:9px; position:absolute; right:0; background:#ff499a; display:inline-block; line-height:12px; border-radius:50%; text-align:center; padding:1px 4px; }
+ */ .cart-counter,.wishlist-counter { font-size:9px; position:absolute; left:3em; background:#ff499a; display:inline-block; line-height:12px; border-radius:50%; text-align:center; padding:1px 4px; }
 
- @media (max-width:981px) { .cart-counter,.wishlist-counter { left:2em; right:auto; }
+ @media (max-width:981px) { .cart-counter,.wishlist-counter { left:3em; right:auto; }
 
  }
 
@@ -993,9 +993,11 @@
 
  .cart-contents-count,.icon_heart_alt { font-size:18px; }
 
+ .cart-contents-count .icon_cart_alt::before { position:relative; bottom:2px; }
+
  .wishlist-counter { right:auto; }
 
- @media (min-width:982px) { .wishlist-counter { left:14px; top:1.5em; }
+ @media (min-width:982px) { .wishlist-counter { top:1.7em; }
 
  }
 
@@ -1369,15 +1371,19 @@
 
  .woocommerce table.shop_attributes { text-align:right; }
 
- .cart-counter { right:auto; left:2px; }
+ .cart-counter { right:auto; left:2em; }
 
- @media (max-width:981px) { .cart-counter { left:auto; right:2em; }
+ @media (max-width:981px) { .cart-counter { left:auto; right:3em; }
 
  }
 
- .wishlist-counter { right:auto; left:-10px; }
+ @media (min-width:60em) { .topcorner .cart-counter { left:1em; }
 
- @media (max-width:981px) { .wishlist-counter { left:auto; right:2em; top:1.5em; }
+ }
+
+ .wishlist-counter { right:auto; left:1em; }
+
+ @media (max-width:981px) { .wishlist-counter { left:auto; right:3em; top:1.5em; }
 
  }
 

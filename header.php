@@ -56,34 +56,7 @@
 					'theme_location' => 'menu-1',
 					'menu_id'        => 'primary-menu',
 				)
-			);
-			
-			/* Shopping cart icon */ 
-			if(class_exists('woocommerce')) : ?>
-			<div>
-				<ul>
-					
-					<li class="my-cart">
-					<?php 
-						/**
-						 * Cart Icon Top Menu Hook
-						 *      
-						 * @hooked estera_woocommerce_cart_top
-						*/
-						do_action( 'estera_woocommerce_cart_top' ); ?>
-					</li>
-
-					<?php if(function_exists('YITH_WCWL')) : ?>
-			
-						<li class="my-wishlist">
-							<span class="qode-wishlist-widget-icon"><?php estera_wishlist_count();?></span>							
-						</li>
-			
-					<?php endif; ?>	
-							
-				</ul>
-			</div>
-			<?php endif; ?>
+			); ?>
 			
 		</nav><!-- #site-navigation -->
 		</div>

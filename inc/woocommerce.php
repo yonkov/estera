@@ -222,3 +222,32 @@ function estera_wishlist_count( ) {
 	</a>
 	<?php
 }
+
+/* Append Woocommerce shopping cart and wishlist as menu items */
+
+function estera_add_last_nav_item ($items) {
+
+    ob_start(); ?>
+
+    <li class="my-cart">
+	<?php 
+		/**
+		 * Cart Icon Top Menu Hook
+		 *      
+		 * @hooked estera_woocommerce_cart_top
+		*/
+		do_action( 'estera_woocommerce_cart_top' ); ?>
+	</li>
+	<?php if(function_exists('YITH_WCWL')) : ?>
+		<li class="my-wishlist">
+			<span class="qode-wishlist-widget-icon"><?php estera_wishlist_count();?></span>							
+        </li>
+    <?php endif;
+
+    $items .= ob_get_clean();
+
+    return $items;
+
+}
+
+add_filter('wp_nav_menu_items','estera_add_last_nav_item');

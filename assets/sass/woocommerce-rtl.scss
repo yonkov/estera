@@ -176,19 +176,24 @@ table.shop_table_responsive tr td {
 // Menu icons
 .cart-counter {
     right: auto;
-    left: 2px;
+    left: 2em;
     @media(max-width: 981px){
         left: auto;
-        right: 2em;
+        right: 3em;
+    }
+}
+@media (min-width: 60em){
+    .topcorner .cart-counter {
+        left: 1em;
     }
 }
 
 .wishlist-counter {
     right: auto;
-    left: -10px;
+    left: 1em;
     @media(max-width: 981px){
         left: auto;
-        right: 2em;
+        right: 3em;
         top: 1.5em;
     }
 }
