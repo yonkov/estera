@@ -230,13 +230,7 @@
 
  .entry-footer span { padding-right:8px; }
 
- a { color:#1e73be; }
-
- a:visited { color:#1e73be; }
-
- a:hover,a:active { color:#1e73be; opacity:0.7; }
-
- a:focus { color:#1e73be; }
+ a:hover,a:active { opacity:0.7; }
 
  a:hover,a:active { outline:0; }
 

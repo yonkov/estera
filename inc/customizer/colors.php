@@ -38,7 +38,18 @@ function estera_customize_colors($wp_customize) {
         'section' => 'colors',
     )));
 
-    // SIdebar Links Text color
+    // Links color
+    $wp_customize->add_setting('links_textcolor', array(
+        'default' => "#1e73be",
+		'sanitize_callback' => 'sanitize_hex_color'
+    ));
+
+    $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'links_textcolor', array(
+        'label' => esc_html__('Links Text Color', 'estera'),
+        'section' => 'colors',
+    )));
+
+    // Sidebar Links Text color
     $wp_customize->add_setting('sidebar_link_textcolor', array(
         'default' => "#888",
         'sanitize_callback' => 'sanitize_hex_color',
@@ -52,8 +63,7 @@ function estera_customize_colors($wp_customize) {
 }
 add_action('customize_register', 'estera_customize_colors');
 
-function estera_customize_colors_css() { 
-
+function estera_customize_colors_css() {
     $header_text_color = get_theme_mod('header_textcolor'); ?>
 
 <style type="text/css">
@@ -61,8 +71,10 @@ body h1,
 body h2,
 body h3,
 h2.entry-title a {
-    color: <?php echo esc_attr(get_theme_mod('headings_textcolor', '#161616'));
-    ?>;
+    color: <?php echo esc_attr(get_theme_mod('headings_textcolor', '#161616'));?>;
+}
+a{
+    color: <?php echo esc_attr(get_theme_mod('links_textcolor', '#1e73be'));?>;
 }
 .widget-area .widget ul a {
     color: <?php echo esc_attr(get_theme_mod('sidebar_link_textcolor', '#888'));
