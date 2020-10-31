@@ -158,7 +158,7 @@ function estera_slider_customize_register( $wp_customize )
     ) );
     $wp_customize->add_control( 'autodrag-slider', array(
         'label'       => esc_html__( 'Auto Drag Slides', 'estera' ),
-        'description' => __( 'Drag the sliders with the mouse.', 'estera' ),
+        'description' => __( 'Drag the slides with the mouse.', 'estera' ),
         'section'     => 'slider',
         'type'        => 'checkbox',
     ) );

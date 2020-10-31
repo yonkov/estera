@@ -186,63 +186,52 @@ function estera_header_slider() {
     
     if ( $slider_query->have_posts() ) { ?>
 
-<div class="header-slider-wrapper swiper-container">
-    <div class="swiper-wrapper">
-        <?php 
-        while ( $slider_query->have_posts() ) {
-            $slider_query->the_post();
-            $url = ( has_post_thumbnail( get_the_ID() ) ? get_the_post_thumbnail_url( get_the_ID(), 'full' ) : get_template_directory_uri() . '/assets/img/fallback-header.jpg' );
-            ?>
+    <div class="header-slider-wrapper swiper-container">
+        <div class="swiper-wrapper">
+            <?php 
+            while ( $slider_query->have_posts() ) {
+                $slider_query->the_post();
+                $url = ( has_post_thumbnail( get_the_ID() ) ? get_the_post_thumbnail_url( get_the_ID(), 'full' ) : get_template_directory_uri() . '/assets/img/fallback-header.jpg' );
+                ?>
 
-        <div class="header-slider-item swiper-slide" style="background: url('<?php 
-            echo  esc_attr( $url ) ;
-            ?>') no-repeat">
-            <div class="image-overlay">
+            <div class="swiper-slide">
+                <div class="header-slider-item" style="background: url('<?php echo esc_attr( $url );?>') no-repeat">
+                    <div class="image-overlay"></div>
+                </div>
                 <div class="text-wrapper">
-                    <h2><a href="<?php 
-            the_permalink();
-            ?>"><?php 
-            the_title();
-            ?></a></h2>
-                    <?php 
-            
-            if ( $slider_excerpt_size ) {
-                ?>
-                    <p><?php 
-                echo  esc_html( estera_slide_excerpt( $slider_excerpt_size ) ) ;
-                ?></p>
-                    <?php 
-            }
-            
-            if ( $button_text ) {
-                ?>
-                    <div class="button-wrapper">
-                        <a href="<?php 
-                the_permalink();
-                ?>"><button><?php 
-                echo  esc_html( $button_text ), ( is_rtl() ? ' &larr;' : ' &rarr;' ) ;
-                ?></button></a>
+                    <div class="entry-text">
+                        <h2><a href="<?php the_permalink(); ?>"> <?php the_title(); ?></a></h2> 
+                        <?php 
+                        if ( $slider_excerpt_size ) { 
+                        ?>
+                            <p><?php echo esc_html( estera_slide_excerpt( $slider_excerpt_size ) ) ;?></p>
+                        <?php 
+                        }
+                
+                        if ( $button_text ) {
+                        ?>
+                            <div class="button-wrapper">
+                                <a href="<?php the_permalink();?>">
+                                    <button><?php echo esc_html( $button_text ), ( is_rtl() ? ' &larr;' : ' &rarr;' ) ;?></button>
+                                </a>
+                            </div>
+                        <?php 
+                        } ?>
                     </div>
-                    <?php 
-            }
-            
-            ?>
                 </div>
             </div>
-        </div>
 
-        <?php 
-        }
-        wp_reset_postdata();
-        ?>
-    </div>
-    <!-- Slider Pagination -->
-    <div class="swiper-pagination"></div>
-    <!-- Slider Arrows -->
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
-</div>
-<?php
+            <?php 
+            }
+            wp_reset_postdata();
+            ?>
+        </div>
+        <!-- Slider Pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- Slider Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div> <?php
 
     }
 
