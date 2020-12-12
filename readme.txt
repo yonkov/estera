@@ -4,7 +4,7 @@ Tags: e-commerce, portfolio, blog, wide-blocks, one-column, two-columns, right-s
 Requires at least: 4.7
 Requires PHP: 5.6
 Tested up to: 5.5
-Stable tag: 1.0.6
+Stable tag: 1.0.7
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -19,6 +19,9 @@ Description: Estera is a lightweight, SEO friendly WordPress theme, optimized fo
 3. Click Activate to use your new theme right away.
 
 == Changelog ==
+
+= 1.0.7 - October 2020 =
+* Improve slider implementation. Fix double-clicki on links inside the slider
 
 = 1.0.6 - October 2020 =
 * Update Documentation
