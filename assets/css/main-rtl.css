@@ -393,6 +393,8 @@ textarea { width: 100%; }
 
 @media (min-width: 40em) and (max-width: 60em) { .widget input { max-width: 60%; } }
 
+.widget-area .calendar_wrap tbody { text-align: center; }
+
 .widget-area ul { list-style: none; padding-left: 0; }
 
 .widget-area ul a { font-size: 0.75em; line-height: 30px; font-weight: 500; text-transform: uppercase; color: #888888; }
@@ -401,7 +403,9 @@ textarea { width: 100%; }
 
 .widget-area .tagcloud a { margin: 0 3px 5px 0; }
 
-.widget-area .tagcloud a { color: #a7a6a6; border: 1px solid #a7a6a6; padding: 0 15px; line-height: 32px; height: 32px; display: inline-block; vertical-align: middle; font-size: 10px !important; font-weight: 500; text-transform: uppercase; letter-spacing: 1px; -webkit-transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, color 0.2s ease-in-out; transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, color 0.2s ease-in-out; }
+.widget-area .tagcloud a { color: #a7a6a6; border: 1px solid #a7a6a6; padding: 0 15px; line-height: 32px; height: 32px; display: inline-block; vertical-align: middle; font-size: 10px !important; font-weight: 500; text-transform: uppercase; letter-spacing: 1px; -webkit-transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out,
+ color 0.2s ease-in-out; transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out,
+ color 0.2s ease-in-out; }
 
 .widget-area .tagcloud a:hover { color: #fff; border-color: #9d9d9d; background-color: #9d9d9d; }
 

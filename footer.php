@@ -20,7 +20,7 @@ do_action( 'estera_footer' );
 ?>
 
 	<footer id="colophon" class="site-footer">
-		<div class="wrapper widget-area" role="complementary" aria-label="<?php esc_attr_e( 'Footer', 'muzeum' ); ?>">
+		<div class="wrapper widget-area" role="complementary" aria-label="<?php esc_attr_e( 'Footer', 'estera' ); ?>">
 		<?php // Display Footer Widgets
 		if ( is_active_sidebar( 'sidebar-2-1' ) || is_active_sidebar( 'sidebar-3-1' ) ) : ?>
 			<?php

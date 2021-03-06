@@ -136,9 +136,9 @@ function estera_widgets_init() {
 	);
 	register_sidebar(
 		array(
-			'name'          => __( 'Footer 1', 'playground' ),
+			'name'          => __( 'Footer 1', 'estera' ),
 			'id'            => 'sidebar-2-1',
-			'description'   => __( 'Add widgets here to appear in your footer.', 'playground' ),
+			'description'   => __( 'Add widgets here to appear in your footer.', 'estera' ),
 			'before_widget' => '<section id="%1$s">',
 			'after_widget'  => '</section>',
 			'before_title'  => '<h2 class="widget-title">',
@@ -148,9 +148,9 @@ function estera_widgets_init() {
 
 	register_sidebar(
 		array(
-			'name'          => __( 'Footer 2', 'playground' ),
+			'name'          => __( 'Footer 2', 'estera' ),
 			'id'            => 'sidebar-3-1',
-			'description'   => __( 'Add widgets here to appear in your footer.', 'playground' ),
+			'description'   => __( 'Add widgets here to appear in your footer.', 'estera' ),
 			'before_widget' => '<section id="%1$s">',
 			'after_widget'  => '</section>',
 			'before_title'  => '<h2 class="widget-title">',
