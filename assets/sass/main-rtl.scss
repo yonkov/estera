@@ -384,11 +384,12 @@ a:active {
 
 // Widgets
 
-.widget > ul {
+.widget-area > ul {
    margin-right: 0;
+
 }
 
-#secondary ul {
+.widget-area ul {
    padding-right: 0;
 }
 

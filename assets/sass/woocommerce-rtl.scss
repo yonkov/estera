@@ -85,12 +85,12 @@ $woocommerce__color-info: #3d9cd2;
     margin-bottom: 1em;
 }
 
-&.woocommerce div.product form.cart .button {
+.woocommerce div.product form.cart .button {
     vertical-align: middle;
     float: right;
 }
 
-&.woocommerce div.product form.cart div.quantity {
+.woocommerce div.product form.cart div.quantity {
     float: right;
 }
 
@@ -100,7 +100,7 @@ $woocommerce__color-info: #3d9cd2;
     }
 }
 
-&.woocommerce .related.products li.product, .woocommerce-page .related.products li.product {
+.woocommerce .related.products li.product, .woocommerce-page .related.products li.product {
     float: right;
     padding: 1em;
     margin: 0;  
