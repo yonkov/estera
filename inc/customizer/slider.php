@@ -355,11 +355,7 @@ function estera_customize_swiper_slider() {
 	;        
 	}
 	.image-overlay {
-		background: rgba(0, 0, 0, .
-		<?php
-		echo esc_attr( $overlay );
-		?>
-	);
+		background: rgba(0, 0, 0, .<?php echo esc_attr( $overlay );?>);
 	}
 	.text-wrapper, .image-overlay {
 		min-height: 

@@ -10,7 +10,7 @@
 
 if ( ! defined( 'ESTERA_VERSION' ) ) {
 	// Replace the version number of the theme on each release.
-	define( 'ESTERA_VERSION', '1.0.8' );
+	define( 'ESTERA_VERSION', '1.1.0' );
 }
 
 if ( ! function_exists( 'estera_setup' ) ) {
@@ -247,40 +247,3 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 if ( class_exists( 'WooCommerce' ) ) {
 	require get_template_directory() . '/inc/woocommerce.php';
 }
-
-/**
- * Display the admin notice.
- */
-function estera_admin_notice() {
-	global $current_user;
-	$user_id = $current_user->ID;
-
-	if ( ! get_user_meta( $user_id, 'estera_ignore_customizer_notice' ) ) {
-		?>
-
-		<div class="notice notice-info">
-			<p>
-				<strong>New features available!</strong> Easily change font sizes of text and heading elements through the theme customizer and add unlimited widgets in the theme footer! - <a href="https://nasiothemes.com/2020/09/29/estera-theme-documentation/#new-features">Learn more</a>  
-				<span style="float:right">
-					<a href="?estera_ignore_customizer_notice=0"><?php esc_html_e( 'Hide Notice', 'estera' ); ?></a>
-				</span>
-			</p>
-		</div>
-
-		<?php
-	}
-}
-add_action( 'admin_notices', 'estera_admin_notice' );
-
-/**
- * Dismiss the admin notice.
- */
-function estera_dismiss_admin_notice() {
-	global $current_user;
-	$user_id = $current_user->ID;
-	/* If user clicks to ignore the notice, add that to their user meta */
-	if ( isset( $_GET['estera_ignore_customizer_notice'] ) && '0' === $_GET['estera_ignore_customizer_notice'] ) {
-		add_user_meta( $user_id, 'estera_ignore_customizer_notice', 'true', true );
-	}
-}
-add_action( 'admin_init', 'estera_dismiss_admin_notice' );
