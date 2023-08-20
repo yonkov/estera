@@ -3,8 +3,8 @@ Contributors: nravota12
 Tags: e-commerce, portfolio, blog, wide-blocks, one-column, two-columns, right-sidebar, left-sidebar, custom-background, custom-colors, custom-header, custom-logo, custom-menu, featured-images, rtl-language-support, theme-options, threaded-comments, translation-ready
 Requires at least: 4.7
 Requires PHP: 5.6
-Tested up to: 6.1
-Stable tag: 1.1.1
+Tested up to: 6.3
+Stable tag: 1.1.5
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -19,6 +19,18 @@ Description: Estera is a lightweight, SEO friendly WordPress theme, optimized fo
 3. Click Activate to use your new theme right away.
 
 == Changelog ==
+
+= 1.1.5 - August 2023 =
+* Improve header spacings, menu icon, link colors, post navigation and remove search widget border
+
+= 1.1.4 - December 2022 =
+* Make links consistent
+
+= 1.1.3 - December 2022 =
+* Update dark mode links and update docs
+
+= 1.1.2 - December 2022 =
+* Improve color of entry content links on dark mode and add underlines
 
 = 1.1.1 - November 2022 =
 * Minify dist css files and update tested up to

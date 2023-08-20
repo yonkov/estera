@@ -86,6 +86,31 @@ big {
 	font-size: 125%;
 }
 
+.single .entry-content a:not(.wp-block-button__link):hover {
+	text-decoration: underline;
+}
+
+.nav-previous {
+	padding-right: 1rem;
+}
+
+.dark-mode .entry-content a {
+	color: #e26c6c;
+}
+
 .dark-mode blockquote {
 	background: transparent;
+}
+
+.dark-mode .widget .wp-block-search__button {
+	background: transparent;
+	border: 1px solid #e3e3e3;
+}
+
+.dark-mode .widget .wp-block-search__input {
+	background: transparent !important;
+}
+
+.dark-mode .comment-form-comment textarea {
+	color: #fff
 }

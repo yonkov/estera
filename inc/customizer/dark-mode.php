@@ -53,7 +53,8 @@ function estera_customize_night_mode_css() {
 <style type="text/css">
 
 .dark-mode .main-navigation-container, .dark-mode .container,
-.dark-mode .sub-menu, .dark-mode .main-navigation ul ul {
+.dark-mode .sub-menu, .dark-mode .main-navigation ul ul,
+.dark-mode .comment-form-comment textarea {
     background-color: <?php echo esc_attr(get_theme_mod('dark_mode_background_color', "#262626")); ?>;
 }
 

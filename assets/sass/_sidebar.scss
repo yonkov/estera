@@ -17,6 +17,10 @@
     h2 {
       line-height: 22px;
     }
+
+    &.widget_search {
+      border-bottom: 0;  
+    }
   
     // Make sure select elements fit in widgets.
     select {

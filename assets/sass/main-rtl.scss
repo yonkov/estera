@@ -309,6 +309,15 @@ a:active {
    text-align: end;
    flex: 1 0 50%;
 }
+
+.nav-previous {
+   padding-right: 0;
+}
+
+.nav-next {
+	padding-right: 1rem;
+}
+
 /* Avatar fix for rtl */
 .comment-body img.avatar {
    right: -1.5em;
