@@ -10,7 +10,7 @@
 
 if ( ! defined( 'ESTERA_VERSION' ) ) {
 	// Replace the version number of the theme on each release.
-	define( 'ESTERA_VERSION', '1.1.6' );
+	define( 'ESTERA_VERSION', '1.1.7' );
 }
 
 if ( ! function_exists( 'estera_setup' ) ) {

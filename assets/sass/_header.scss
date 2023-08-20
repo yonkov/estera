@@ -26,7 +26,6 @@
 
         .site-title {
             margin: 0;
-            line-height: 1.2;
         }
 
         .site-description {
@@ -34,6 +33,10 @@
         }
     }
 
+}
+
+.site-title {
+    line-height: 1.2;
 }
 
 .main-navigation {
@@ -105,6 +108,13 @@
 		display: flex;
 		flex-wrap: wrap;
 	}
+}
+
+@media screen and (min-width: 60em) {
+
+    .site-title {
+        line-height: 1.5;
+    }
 }
 
 // Toggle menu icon
