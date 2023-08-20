@@ -62,7 +62,7 @@ function estera_customize_night_mode_css() {
     background-color: #fff;
 }
 
-.dark-mode h2.entry-title a, .dark-mode *, .dark-mode .main-navigation-container .main-navigation a,
+.dark-mode h2.entry-title a, .dark-mode *, .dark-mode .entry-meta a, .dark-mode .entry-footer a, .dark-mode .main-navigation-container .main-navigation a,
 .dark-mode .site-title a, .dark-mode .site-description, .dark-mode .more-link {
     color: #fff;
 }

@@ -4,7 +4,7 @@ Tags: e-commerce, portfolio, blog, wide-blocks, one-column, two-columns, right-s
 Requires at least: 4.7
 Requires PHP: 5.6
 Tested up to: 6.3
-Stable tag: 1.1.5
+Stable tag: 1.1.6
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -19,6 +19,9 @@ Description: Estera is a lightweight, SEO friendly WordPress theme, optimized fo
 3. Click Activate to use your new theme right away.
 
 == Changelog ==
+
+= 1.1.6 - August 2023 =
+* Fix comment widget dark mode colors and entry meta dark mode colors. Adjust site header line height
 
 = 1.1.5 - August 2023 =
 * Improve header spacings, menu icon, link colors, post navigation and remove search widget border
