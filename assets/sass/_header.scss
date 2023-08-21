@@ -43,6 +43,7 @@
     @media (min-width: 600px) {
         @include row-align-center;
         justify-content: flex-end;
+        padding-right: 3rem;
     }
 
     .menu-toggle {
